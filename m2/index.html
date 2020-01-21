@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-latest.js"> </script>
+    <script src="main.js"></script>
+    <script src="./jquery.rotator.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri|Gothic+A1&display=swap" rel="stylesheet">
+    <title>반응형 레이아웃8 - column-count</title>
+    <title>Document</title>
+    <style>
+   .con{background: rgba(255,255,255,0.3);}
+/*        first*/
+    #first_wrap{ width: 100%; height: 100%; overflow: hidden; position: relative;}
+    .first{width: auto; height:300%; margin: 0px auto; }
+    .first li{width:auto; height: 100%; margin: 0 auto;}
+    .first li img{display: block; height: auto; }
+/*        */
+    .con_box li{position: relative; height: auto; margin: 0 auto;}
+    .third{position: relative; height: auto; }
+    .con_box img{display: block; width: 100%;  }
+    .second, .third img{display: block; ;width: 100%; height: auto;}
+    .tit_btn1{text-align: center; height: 80px; line-height: 80px;margin-left: 20%; margin-right: 20%; }
+    .tit_btn1_tit button{text-align: center; font-size: 20px; color:black; font-weight:  bold; line-height: 80px; }
+    .second{margin-top: 0px;margin-bottom: 40px; background-position: fixed; }
+/*    .sec_tit_box{width: calc(100%-40%); margin: 0 auto;}*/
+    .sec_tit{color:white; font-size: 20px;margin-top: 20px; position: relative; text-align: center; font-weight: bold; width: 200px; margin: 0 auto; }
+/*    .second li:after{content: ""; clear: both; display: table;}*/
+/*    .third{background: rgba(255,255,255,0.2);}*/
+    .second .blackbox{width: 1000px; height: 300px;}
+    .tit_btn2{font-family: 'Gothic A1', sans-serif; width: calc(100% - 10%); margin: 0px auto; line-height: 40px; }
+    .tit{display: block; width: 100px; float: left; }
+/*
+    .more_btn {width: calc(100% - 10%); display: block; float: right; }
+    .more_btn button{background: white; font-weight: bold;}
+*/
+    .disneych{height: 70%;}
+    .page_wrap{}
+/*    slide*/
+    .item1{background-image: url(./img/img1.jpg); background-size: 100%; background-repeat: no-repeat; }
+    .item2{background-image: url(./img/img1-1.png); background-size: 100%; background-repeat: no-repeat; }
+    .item3{background-image: url(./img/img1-2.png); background-size: 100%; background-repeat: no-repeat; }
+     @media screen and (max-width:767px) {
+        #first_wrap{width: auto; height: 200px;}
+        .first li{width: auto; height: 200px;}
+        .first img{height: 200px;}
+        .con_box { column-count:1;}
+        .third{width: 90%; margin: 0px auto; margin-bottom: 40px;}
+        .third li{margin-top: 20px;}
+        .left { width: 100px; margin-top: 100px;}
+        .con { width:calc(100% - 100px); height: auto }
+        .ft { width:110px; }
+*/
+    }
+    @media screen and (min-width:768px) and (max-width:1024px){
+        .gnb{padding-top: 80px;}
+        #first_wrap{width: auto; height: 500px;}
+        .first li{width: auto; height: 500px;}
+        .con_box { column-count:1;}
+        .second{column-count:2;}
+        .third{column-count:3; column-gap:20px; width: 90%; margin: 0 auto; margin-bottom: 40px;}
+        .left { width: 150px; }
+        .con { width:calc(100% - 150px); }
+        .tit_btn{height: 70px; line-height: 80px;}
+        .ft { width:150px; }
+    }
+/*
+    @media screen and (min-width:960px) and (max-width:1279px){
+        .second{column-count:2;}
+        .third{column-count:3; column-gap:20px; width: 90%; margin: 0 auto; margin-bottom: 40px;}
+        .left { width: 150px; }
+        .con { width:calc(100% - 150px); }
+        .tit_btn{height: 70px; line-height: 80px;}
+        .ft { width:150px; }
+    }
+*/
+    @media screen and (min-width:1280px) {
+        .wrap{width: 80%; margin: 0 auto;}
+        .gnb{margin-top: 150px;}
+        .gnb li a{font-size: 24px;}
+        #first_wrap{width: auto; height: 1000px;}
+        .first li{width: auto; height: 1000px;}
+        .second{width: 80%; margin: 0 auto;column-count:2; }
+        .third{column-count:3; column-gap:20px; width: 80%; margin: 0 auto; margin-bottom: 40px; }
+        .left {width: 300px; }
+        .con {width:calc(100% - 150px); }
+        .tit_btn{height: 80px; line-height: 80px;}
+        .tit{display: block; width: 100px; float: left; margin-left: 140px;}
+        .more_btn {display: block; width: 40px; height: 40px;float: right; margin-right: 160px;}
+        .more_btn button{width: 100px; height: 40px;}
+        .ft { width:220px; }
+    }
+        
+    </style>
+    <script>
+
+
+    </script>
+</head>
+<body>
+   <header class="hd">
+       <div class="logo"><a href="#"><img src="./img/logo_white.png" alt=""></a></div>
+   </header>
+    <div class="wrap">
+    <aside class="left">
+        <nav class="gnb">
+            <ul>
+                <li><a href="sub1.html">DISNEY</a></li>
+                <li class="m2"><a>MAVLE</a>
+                <ul class="sub2">
+                    <li><a href="sub2.html">시리즈</a></li>
+                    <li><a>비하인드씬</a></li>
+                </ul>
+                </li>
+                <li><a href="sub3.html">STARWARS</a></li>
+                <li><a href="sub4.html">EVENTS</a></li>
+            </ul>
+        </nav>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <p></p>
+            </div>
+        </footer>
+    </aside>
+    <main class="con">
+       <div class="con_box">
+       <div id="first_wrap">
+        <ul class="first">
+            <li class="item1"><a href=""></a></li>
+            <li class="item2"><a href=""></a></li>
+            <li class="item3"><a href=""></a></li>
+        </ul>
+        </div>
+         <ul class="tit_btn1">
+<!--
+        <div class="tit_btn1_tit">
+            <button>디즈니채널</button>
+        </div>
+-->
+        </ul>
+        <div class="page_wrap">
+        <div class="sec_tit_box">
+        <p class="sec_tit"></p>
+        </div>
+        <ul class="second">
+            <li><a href=""><img src="./img/logo.png" href="#"alt="" class="second_logo"></a></li>
+            <li><a href="" class="disneych"><img src="./img/disneychannel.png" alt="" class=""></a></li>
+        </ul>
+        <ul class="tit_btn2">
+        <h3 class="tit">개봉예정작</h3>
+        </ul>
+        <ul class="third">
+            <li><a href=""><img src="./img/img2.png" alt=""></a></li>
+            <li><a href=""><img src="./img/img3.png" alt=""></a></li>
+            <li><a href=""><img src="./img/img4.png" alt=""></a></li>
+        </ul>
+        </div>
+        </div>
+    </main>
+    </div>
+</body>
+</html>

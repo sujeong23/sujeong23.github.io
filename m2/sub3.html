@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-latest.js"> </script>
+    <script src="main.js"></script>
+    <script src="./jquery.rotator.js"></script>
+     <script src="prefixfree.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Ma+Shan+Zheng|Roboto:700&display=swap" rel="stylesheet">
+    <title>반응형 레이아웃8 - column-count</title>
+    <title>Document</title>
+    <style>
+        .con{background-color: rgba(0,0,0,0.2);}
+        .con img{display: block; height: auto; margin: 0 auto;}
+        .page_wrap{}
+        .text_box{background: transparent;}
+        .text_box h2{color:black;text-align: right;}
+        .text_box p{color: black;}
+        .text_box p{line-height: 40px; margin-top: 30px;}
+/*        second*/
+        .second h2{color:white; font-weight: bold; margin:30px auto; text-align: center;}
+        .second p{color:black; margin: 20px auto;}
+     @media screen and (max-width:767px) {
+        .con{width:calc(100%-100px); margin-top: 30px; margin-left: 100px;}
+        .con_box{margin-top: 90px;}
+/*        .second{margin-left: 120px;}*/
+        .second li.mo{width: 90%; margin: 0 auto;}
+        .second h2{font-size: 16px;}
+        .third li{width: 60%;margin-left: 120px;}
+        .ft { width:220px; }
+        .left { width: 100px; margin-top: 80px; }
+        .ft { width:110px; }
+         .marvel{width: 160px; height: 40px;font-size: 30px; top: 20%; left: 64%; line-height: 40px;}
+*/
+    }
+    @media screen and (min-width:768px) and (max-width:1024px){
+         .con img{ width:100%; }
+        #first_wrap{width: auto; height: 500px;}
+        .con_box { column-count:1; margin-top: 20px;}
+        .second{column-count:1;}
+        .second h2{font-size: 16px;}
+        .second li.mo{width: 60%; margin: 50px auto;}
+        .third{column-count:3; column-gap:20px; width: 90%; margin: 0 auto; margin-bottom: 40px;}
+        .left { width: 150px; margin-top: 80px; }
+        .con { width:calc(100% - 150px); margin-top: 100px; }
+        .tit_btn{height: 70px; line-height: 80px;}
+        .ft { width:150px; }
+        .marvel{width: 250px; height: 50px;font-size: 30px; top: 15%; left: 60%; line-height: 50px;}
+    }
+    @media screen and (min-width:960px) and (max-width:1279px){
+        .con_box { column-count:1; margin-top: 140px;}
+        .con img{width: 100%;}
+
+    }
+    @media screen and (min-width:1280px) {
+        .wrap{width: 70%; margin: 0 auto; margin-top: 160px;text-align: center;}
+        .gnb li a{font-size: 24px;}
+        .left {width:300px; margin: 0;}
+        .con {width: 80%; margin: 0 auto;}
+        .con img{width: 60%;}
+        .text_box{width: 70%; margin: 0 auto;}
+        .ft { width:220px; }
+    }
+        
+    </style>
+</head>
+<body>
+   <header class="hd">
+       <div class="logo"><a href="index.html"><img src="./img/logo_white.png" alt=""></a></div>
+   </header>
+    <div class="wrap">
+    <aside class="left">
+        <nav class="gnb">
+            <ul>
+                <li><a href="sub1.html">DISNEY</a></li>
+                <li class="m2"><a>MAVLE</a>
+                <ul class="sub2">
+                    <li><a href="sub2.html">시리즈</a></li>
+                    <li><a>비하인드씬</a></li>
+                </ul>
+                </li>
+                <li><a href="sub3.html">STARWARS</a></li>
+                <li><a href="sub4.html">EVENTS</a></li>
+            </ul>
+        </nav>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <p></p>
+            </div>
+        </footer>
+    </aside>
+    <main class="con">
+      <div class="con_box">
+        <div class="page_wrap">
+        <ul class="second">
+            <li class="mo">
+                <a href="">
+                <img src="./img/sub3.png" href="#"alt="" class="second_logo">
+                </a>
+            </li>
+            <li class="mo">
+               <h2>2019<br>스타워즈: 라이즈 오브<br> 스카이워커</h2>
+                <a href="">
+                <img src="./img/sub3-1.jpg" href="#"alt="" class="second_logo">
+                </a>
+            </li>
+             <li class="mo">
+               <h2>2017<br>스타워즈: 라스트 제다이</h2>
+                <a href="">
+                <img src="./img/sub3-2.jpg" href="#"alt="" class="second_logo">
+                </a>
+            </li>
+            <li class="mo">
+               <h2>2015<br>스타 워즈: 깨어난 포스</h2>
+                <a href="">
+                <img src="./img/sub3-3.jpg" href="#"alt="" class="second_logo">
+                </a>
+            </li>
+        </ul>
+        <ul class="tit_btn2">
+        </ul>
+        <ul class="third">
+           
+        </ul>
+        </div>
+        </div>
+    </main>
+    </div>
+</body>
+</html>

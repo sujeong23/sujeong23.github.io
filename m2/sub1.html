@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-latest.js"> </script>
+    <script src="main.js"></script>
+    <script src="./jquery.rotator.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Ma+Shan+Zheng|Roboto:700&display=swap" rel="stylesheet">
+    <title>반응형 레이아웃8 - column-count</title>
+    <title>Document</title>
+    <style>
+        .con{background: rgba(255,255,255,0.4); height: auto;}
+        .text_box{height: 100%; background: transparent;}
+        .text_box h2{color:black; text-align: center;}
+        .text_box p{color: black; text-align: center;}
+        .text_box p{line-height: 30px; margin-top: 30px;}
+        .con img{display: block; width: 100%; height: auto; margin: 0 auto;}
+        
+    
+     @media screen and (max-width:767px) {
+        .left {width:100px; margin-top: 100px;}
+        .con {width:73%; margin: 100px auto;}
+        .text_box{width: 73%; margin: 0 auto;padding-top: 30px;}
+        .text_box p{font-size: 14px;}
+        .text_box h2{text-align: center; font-size: 22px;}
+        .ft { width:110px; }
+*/
+    }
+    @media screen and (min-width:768px) and (max-width:1025px){
+        .left {width:150px; margin-top: 80px;}
+        .con {width: 80%; margin: 100px auto; height: 80vh;}
+        .text_box{width: 80%; height: 100%; margin: 30px auto;}
+        .text_box p{margin: 30px auto;}
+        .left { width: 150px; }
+        .con { width:calc(100% - 150px); }
+        .ft { width:150px; }
+    }
+/*
+    @media screen and (min-width:960px) and (max-width:1279px){
+        .second{column-count:2;}
+        .third{column-count:3; column-gap:20px; width: 90%; margin: 0 auto; margin-bottom: 40px;}
+        .left { width: 150px; }
+        .con { width:calc(100% - 150px); }
+        .tit_btn{height: 70px; line-height: 80px;}
+        .ft { width:150px; }
+    }
+*/
+    @media screen and (min-width:1280px) {
+        .wrap{width: 70%; margin: 0 auto; margin-top: 160px;text-align: center;}
+        .gnb li a{font-size: 24px;}
+        .left {width:300px; margin: 0;}
+        .con {width: 80%; margin: 0 auto;}
+        .text_box{width: 80%; margin: 30px auto;}
+        .ft { width:220px; }
+    }
+        
+    </style>
+    <script>
+    $(document).ready(function(){
+          function nextAni(){
+       $(".first").not(":animated").animate({"margin-top":"-100%"}, 300, function(){
+           $(".first li").eq(0).appendTo($(".first"));
+           $(".first").css("margin-top", "0px");
+       });
+   } 
+   var intv = setInterval(function(){
+        nextAni();
+    }, 2900);  
+    });
+    </script>
+</head>
+<body>
+   <header class="hd">
+       <div class="logo"><a href="index.html"><img src="./img/logo_white.png" alt=""></a></div>
+   </header>
+    <div class="wrap">
+    <aside class="left">
+    <nav class="gnb">
+            <ul>
+                <li><a href="sub1.html">DISNEY</a></li>
+                <li class="m2"><a>MAVLE</a>
+                <ul class="sub2">
+                    <li><a href="sub2.html">시리즈</a></li>
+                    <li><a>비하인드씬</a></li>
+                </ul>
+                </li>
+                <li><a href="sub3.html">STARWARS</a></li>
+                <li><a href="sub4.html">EVENTS</a></li>
+            </ul>
+        </nav>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <p></p>
+            </div>
+        </footer>
+    </aside>
+    <main class="con">
+       <div class="text_box">
+           <h2>
+            월트디즈니 컴퍼니</h2>
+            <img src="./img/sub1_company.png" alt="">
+            <p>월트디즈니 컴퍼니(The Walt Disney Company)는 1923년 창립한 이래, 지금까지 전세계 문화 콘텐츠 시장을 선도해온 글로벌 패밀리 엔터테인먼트 및 미디어 엔터테인먼트 회사입니다. 디즈니(Disney), 픽사(Pixar), 마블(Marvel), 스타워즈(Star Wars), ABC, ESPN 등 6개의 핵심브랜드를 중심으로 스토리텔링(Storytelling)에 기반한 우수하고 혁신적인 콘텐츠를 전 세계에 제공하고 있습니다. 월트디즈니 컴퍼니는 급변하는 미디어 환경에 맞추고 양질의 컨텐츠 생산, 기술 혁신 도모, 해외 시장 확대, 소비자 직접 경험 등 회사의 성장 동력을 확보하기 위해, 소비자 직접 제공 및 인터내셔널(Direct-to-Consumer and International), 스튜디오 엔터테인먼트(Studio Entertainment), 미디어 네트워크(Media Network), 파크, 익스피리언스 및 소비재(Parks, Experiences and Consumer Products) 등 총 4개의 사업 부문을 운영하고 있습니다. 월트디즈니 컴퍼니는 '다우존스 산업지수' 30대 기업 중 하나로, 2017 회계연도 기준 연간 551억 달러(한화 약 61조 4,034억원) 이상의 매출을 기록했습니다. 월트디즈니 컴퍼니는 2018년 포춘이 선정한 ‘세계에서 가장 존경받는 기업’ 종합 순위 6위 및 엔터테인먼트 부분 1위에 오른 바 있습니다.</p>
+       </div>
+    </main>
+    </div>
+</body>
+</html>
