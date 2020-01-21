@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="XEIcon/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="main.js"></script>
+    <title>대학상징</title>
+    <style>
+        .wrap{width: 100%; height: auto; margin: 0 auto; background-color: ;}
+        .tit_wrap{ background-position: center;}
+        h1, h2,h3{text-align: center;}
+        h1{line-height: 60px;}
+        h3{margin-top: 40px; margin-bottom: 40px; color:darkblue;}
+        .tit {width: 90%; height: auto; margin: 0px auto;}
+/*        .tit li {border: 1px solid black;}*/
+        .tit li span{display: block; color: black; line-height: 24px; margin: 50px auto;}
+        .tit li img{display: block; height: auto; margin: 0 auto;}
+        @media screen and (max-width:767px){
+        .tit_wrap{height: 100px;}
+        .tit{column-count: 1; }
+        .tit li{height: auto; text-align: center; }
+        .tit li img{display: block; width: 100%; height: auto;}
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1024px){
+        .tit{display: flex; flex-direction: column; justify-content: space-around; }
+        .tit li{height: auto; text-align: center; }
+        h2,h3{font-size: 30px;}
+        }
+        
+        @media screen and (min-width:1280px){
+        .con{width:50%; margin: 0 auto;}
+        .tit{display: flex; flex-direction: column; justify-content: space-around; }
+        .tit li{height: auto;text-align: center; }
+        .tit li span{display: block;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+       <div class="logo"><a href="index.html"><img src="./img/logo.png" alt=""></a></div>
+        <nav class="gnb">    
+            <div class="tap"><i class="xi-bars"></i></div>
+            <div class="menu">
+                <ul class="menu_box">
+                    <li class="sub_m sub_m1"><a>대학소개</a>
+                    <ul class="sub sub1-1">
+                            <li><a href="sub1.html">이념 및 역사</a></li>
+                             <li><a href="sub1-1.html">대학 상징</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub_m sub_m2"><a>입학</a>
+                         <ul class="sub sub2-1">
+                            <li><a href="sub2.html">대학입학</a></li>
+                            <li><a href="sub2-2.html">외국인입학</a></li>
+                        </ul></li>
+                    <li class="sub_m sub_m3"><a>교육</a>
+                         <ul class="sub sub3-1">
+                            <li><a href="sub3.html">대학</a></li>
+                        </ul></li>
+                    <li class="sub_m sub_m4"><a>연구산학</a>
+                         <ul class="sub sub4-1">
+                            <li><a href="sub4.html">산업기술혁신지원단</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <div class="login_tap"><i class="xi-profile-o"></i></div>
+            <div class="login">
+                <div id="form1">
+                 <form action="login_check.php" method="" name="frm1" id="frm01" autocomplete="on">
+                 <fieldset class="field">
+                  <i class="xi-close-circle-o"></i>
+                <legend>로그인</legend>
+                <label for="m_id">아이디</label> : 
+                <input type="text" id="m_id" name="id" title="" size="30" maxlength="10" tabindex="1" placeholder="" autofocus required pattern="[a-zA-Z0-9]{4,10}"><br><br>
+                <label for="m_pw">비밀번호</label> : 
+                <input type="password" id="m_pw" name="pw" title="" autocomplete="off" required pattern="[a-zA-Z0-9]{10}"><br>
+                  <div class="lc">
+                 <input type="submit" value="로그인" class="">
+                 <input type="reset" value="취소">
+                 </div>
+                </fieldset>
+                </form>   
+                </div>
+            </div>
+        </nav>
+    </header>
+        <main class="con">
+            <div class="tit_wrap">
+            <h1>중앙대학교 상징물</h1>
+            </div>
+            <ul class="tit">
+                <li>
+                   <h3 class="tit_tit">청룡상</h3>
+                   <a href="">
+                    <img src="./img/sub1-1.png" alt="">
+                    </a>
+                    <span>본교의 대표적 상징물인 청룡상은 설립자 故 승당 임영신 박사가 흑석동 221번지 현위치에 학교부지를 매입할 때 꿈 가운데 나타난 청룡을 학교의 상징으로 정한데 근거하여 동창회 기금으로 건립된 뜻깊은 기념물이다.</span>
+                </li>
+                <li>
+                   <h3 class="tit_tit">중앙대학교 교가</h3>
+                   <a href="">
+                    <img src="./img/sub1-1-1.png" alt="">
+                    </a>
+                    <span>작사 - 김태오,작곡 - 나운영<br>
+                    교가 1절
+                    남산이 영을 넘어 바라보이고 뒤로는 관악산이 높이 솟았네..한강수 굽이치는 노들의 강변 명수대 송림속에 우뚝선 중앙..의에죽고 참에 삶이 모교의 정신 세계에 빛내세 우리 중앙대학교.<br><br>
+                    교가 2절
+                    삼천리 이강산에 꽃을 피우려 굳세고 지혜롭게 모여들었네..진선미 거룩한맘 길러온 정성 힘차게 나라위해 몸바친 중앙..의에죽고 참에 삶이 모교의 정신 세계에 빛내세 우리 중앙대학교.</span>
+                </li>
+                                <li>
+                   <h3 class="tit_tit">중앙대학교 교색</h3>
+                   <a href="">
+                    <img src="./img/sub1-1-2.JPG" alt="">
+                    </a>
+                    <span>중앙대학교의 교색인 CAU Blue는 변화와 발전을 창조하는 중앙대학교의 힘차고 진취적인 모습을 상징하고 있다. 진리와 지혜의 상징인 Blue를 교색으로 정함으로써 꿈을 향해 매진하는 중앙인의 성실하고 생동감 있는 모습을 나타내고 있으며, 중앙대가 지향하는 젊음, 첨단, 미래, 역동 등의 발전 지향적인 이미지를 더욱 강화시키고 있다.</span>
+                </li>
+                 
+                 
+                
+            
+            
+            
+            
+<!--
+                <li>
+                    <h3 class="tit_tit">청룡상</h3>
+                     <p>본교의 대표적 상징물인 청룡상은 설립자 故 승당 임영신 박사가 흑석동 221번지 현위치에 학교부지를 매입할 때 꿈 가운데 나타난 청룡을 학교의 상징으로 정한데 근거하여 동창회 기금으로 건립된 뜻깊은 기념물이다.</p>
+                    <img src="./img/sub1-1.png" alt="">
+                </li>
+                <li>
+                    <h3 class="tit_tit">중앙대학교 교가</h3>
+                    <p>작사 - 김태오,작곡 - 나운영<br>
+                    교가 1절
+                    남산이 영을 넘어 바라보이고 뒤로는 관악산이 높이 솟았네..한강수 굽이치는 노들의 강변 명수대 송림속에 우뚝선 중앙..의에죽고 참에 삶이 모교의 정신 세계에 빛내세 우리 중앙대학교.<br><br>
+                    교가 2절
+                    삼천리 이강산에 꽃을 피우려 굳세고 지혜롭게 모여들었네..진선미 거룩한맘 길러온 정성 힘차게 나라위해 몸바친 중앙..의에죽고 참에 삶이 모교의 정신 세계에 빛내세 우리 중앙대학교.</p>
+                     <img src="./img/sub1-1-1.png" alt="">
+               </li>
+               <li>
+                    <h3 class="tit_tit">중앙대학교 교색 Blue</h3>
+                    <p>중앙대학교의 교색인 CAU Blue는 변화와 발전을 창조하는 중앙대학교의 힘차고 진취적인 모습을 상징하고 있다. 진리와 지혜의 상징인 Blue를 교색으로 정함으로써 꿈을 향해 매진하는 중앙인의 성실하고 생동감 있는 모습을 나타내고 있으며, 중앙대가 지향하는 젊음, 첨단, 미래, 역동 등의 발전 지향적인 이미지를 더욱 강화시키고 있다.</p>
+                    <img src="./img/sub1-1-2.jpg" alt="">
+               </li>
+-->
+            </ul>
+        </main>
+    </div>
+</body>
+</html>

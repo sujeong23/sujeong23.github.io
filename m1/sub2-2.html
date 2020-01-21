@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+   <link rel="stylesheet" type="text/css" href="XEIcon/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="main.js"></script>
+    <title>입학</title>
+    <style>
+        .wrap{width: 100%; margin: 0 auto; background-color: aliceblue;}
+        h1, h2,h3{text-align: center;}
+        .tit_wrap{ background-position: center;}
+        h1{line-height: 60px;}
+        h2{margin-top: 10px;margin-bottom: 20px;}
+        h3{margin-top: 10px; margin-bottom: 10px; color:darkblue;}
+        .tit {width: 90%; margin: 0px auto;}
+/*        .tit li {border: 1px solid black;}*/
+        .tit li a{color:black; line-height: 30px;}
+        .ico{font-size: 50px; color: dodgerblue; }
+        .con{height: 100vh;}
+        .con .first p {line-height: 40px; text-align: center;}
+        .ban_box{margin-top: 50px;}
+        .first {width: 100%;height: auto;}
+        .first .cir_box{width: 100%; height: auto;}
+        .cir_box li{float: left; background: white; text-align: center; background-color:bisque;}
+        .cir_box a{color:black; font-weight: bold;}
+        .ban_box button{display:block; text-align:center;margin: 0 auto;background-color: lightsteelblue; color:midnightblue; line-height: 50px; font-weight: bold;}
+        .ban_box2{width: 90vw; height: 150px;margin:30px auto; background-color: white; text-align: center; }
+        .ban_box2 button{display: block;width: 180px; height: 50px; margin: 0 auto; background-color: lightsteelblue; color:midnightblue; line-height: 50px; font-weight: bold}
+        .ban_box2 p{line-height: 30px; color: black; text-align: center; padding-top: 20px; font-weight: bold}
+        .img_box{margin-top: 50px;}
+        .img_box img{display: block; width: 100%; height: auto;}
+/*        mobile*/
+        @media screen and (max-width:767px){
+        .tit_wrap{height: 150px;}
+        .tit{column-count: 1; }
+        .tit li{height: 250px; text-align: center;margin-bottom: 20px;}
+        .cir_box{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center;}
+        .cir_box li{width: 90px; height: 90px; margin: 5px;border-radius: 100px;}
+        .cir_box li a{display: block; margin: 30px auto;text-align: center;}
+        .ban_box button{width: 180px;height: 50px;}
+        .ban_box2 img{display: block; width: 100%; height: auto;}
+        }
+/*        태블릿*/
+        @media screen and (min-width:768px) and (max-width:1024px){
+        .first{column-count: 5;}
+        .tit{column-count: 1; }
+        .tit li{height: 250px; text-align: center; font-size: 24px;}
+        h2,h3{font-size: 30px;}
+        .cir_box{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center;}
+        .cir_box li{width: 100px; height: 100px; border-radius: 100px; }
+        .cir_box li a{display: block; margin: 30px auto; text-align: center;}
+        .img_box{column-count: 1; margin-top: 50px;}
+        .ban_box{column-count: 1;}
+        .ban_box button{width: 250px;height: 50px;margin-bottom: 10px;}
+        .ban_box2 img{display: block; width: 100%; height: auto;}
+            
+        }
+        
+        @media screen and (min-width:1280px){
+        .tit{column-count: 3; margin-top: 50px;}
+        .tit li{height: 300px; text-align: center; }
+        .ban_box{column-count: 1; column-gap: 0;}
+        .ban_box button{width: 350px; height: 50px; margin-bottom: 10px;}
+        .cir_box{display: flex; flex-direction: row; justify-content: center;}
+/*        .cir_box{display: flex; flex-direction: row; justify-content: center;}*/
+        .cir_box li{width: 100px; height: 100px; margin: 20px; border-radius: 100px;}
+        .cir_box li a{display: block; margin-top: 30px;}
+        .ban_box2{width: 50vw; margin: 50px auto;}
+        .ban_box2 img{width: 100%;} 
+        .img_box {width: 50vw; margin: 0 auto;}
+        } 
+    </style>
+</head>
+<body>
+    <div class="wrap">
+       <header class="hd">
+       <div class="logo"><a href="index.html"><img src="./img/logo.png" alt=""></a></div>
+        <nav class="gnb">    
+            <div class="tap"><i class="xi-bars"></i></div>
+            <div class="menu">
+                <ul class="menu_box">
+                    <li class="sub_m sub_m1"><a>대학소개</a>
+                    <ul class="sub sub1-1">
+                            <li><a href="sub1.html">이념 및 역사</a></li>
+                             <li><a href="sub1-1.html">대학 상징</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub_m sub_m2"><a>입학</a>
+                         <ul class="sub sub2-1">
+                            <li><a href="sub2.html">대학입학</a></li>
+                            <li><a href="sub2-2.html">외국인입학</a></li>
+                        </ul></li>
+                    <li class="sub_m sub_m3"><a>교육</a>
+                         <ul class="sub sub3-1">
+                            <li><a href="sub3.html">대학</a></li>
+                        </ul></li>
+                    <li class="sub_m sub_m4"><a>연구산학</a>
+                         <ul class="sub sub4-1">
+                            <li><a>산업기술혁신지원단</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <div class="login_tap"><i class="xi-profile-o"></i></div>
+            <div class="login">
+                <div id="form1">
+                 <form action="" method="" name="frm1" id="frm01" autocomplete="on">
+                 <fieldset class="field">
+                  <i class="xi-close-circle-o"></i>
+                <legend>로그인</legend>
+                <label for="m_id">아이디</label> : 
+                <input type="text" id="m_id" name="id" title="" size="30" maxlength="10" tabindex="1" placeholder="" autofocus required pattern="[a-zA-Z0-9]{4,10}"><br><br>
+                <label for="m_pw">비밀번호</label> : 
+                <input type="password" id="m_pw" name="pw" title="" autocomplete="off" required pattern="[a-zA-Z0-9]{10}"><br>
+                  <div class="lc">
+                 <input type="submit" value="로그인" class="">
+                 <input type="reset" value="취소">
+                 </div>
+                </fieldset>
+                </form>   
+                </div>
+            </div>
+        </nav>
+    </header>
+        <main class="con">
+           <div class="first">
+            <ul class="cir_box">
+                <li><a href="">1.온라인<br>원서접수</a></li>
+                <li><a href="">2.원서 및<br> 서류제출</a></li>
+                <li><a href="">3.예술대<br> 실기</a></li>
+                <li><a href="">4.합격자<br> 발표</a></li>
+                <li><a href="">5.본교한국어능력시험</a></li>
+            </ul>
+           </div>
+            <div class="img_box">
+                    <img src="./img/sub2-2.jpg" alt="">
+            </div>
+           <div class="ban_box">
+                <button  href="https://admission.cau.ac.kr/guide/plan.html?ctg_cd=susi">학부 모집요강</button>
+                <button>대학원 모집요강</button>
+           </div>
+           <div class="ban_box2">
+             <img src="./img/sub2_back.png" alt="">
+           </div>
+        </main>
+    </div>
+</body>
+</html>

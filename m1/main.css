@@ -1,0 +1,36 @@
+@charset "utf-8";
+  *{margin: 0; padding: 0;}
+    body, html{font-family: 'Gothic A1', sans-serif;; width: 100%; height: 100%;}
+    html{overflow-x: hidden;}
+    body{overflow-y: auto;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    .wrap{margin: 0 auto; width: 100vw; height: auto; transition: 0.5s;}
+    .hd{ width: 100%; margin: 0 auto; z-index: 16; position: relative; background: #003399;}
+/*        gnb tap*/
+    .tap{position: absolute; top: 28px; left: 20px;}
+    .xi-bars{color: white; font-size:40px;}
+/*gnb*/
+    .menu{background-color: #003399;width: 100vw; height: 100vh; display: none;}
+    .menu_box{text-align: left;padding-top:0px; text-align: center; }
+    .menu_box .sub_m{line-height: 50px; border-bottom: 0.4px solid white;}
+    .sub{display: none;}
+    .sub1-1{height: 100px; }
+    .sub li{background-color:cornflowerblue;}
+    .menu_box a{color: white; font-weight: bold;}
+    .logo a{display: block; width: 100px; height: 80px;text-align: center;}
+    .logo{display: block; width: 200px; height: 80px; margin: 0px auto; padding-top: 20px;}
+    .con{width: 90vw; padding-top: 50px;margin: 0px auto; position: relative;}
+/*    .con_box{width: 70%; margin: 0 auto;position: relative; }*/
+/*login*/
+    .login_tap{float: right; position: absolute; top: 28px; right: 20px;}
+    .xi-profile-o{color:white; font-size:40px; }
+    .login{width: 100vw; height: 100vh; background: white; display: none;}
+    #frm01 {width: 80vw; height: 80vh; margin: 0 auto; text-align: center; font-weight: bold; } 
+    .field{height: 50vh;  margin-top: 20px; position: relative;}
+    .field label{width: 50vw; margin: 0 auto; clear: both;}
+    #m_id{margin-top: 40px; width: 171px;height: 40px; border: 1px solid darkblue;text-align: center;}
+    #m_pw{margin-top: 20px; height: 40px; border: 1px solid darkblue;}
+    .lc{margin-top: 30px;}
+    .lc input {margin: 20px; width: 80px; height: 40px; background: darkblue; color:white;}
+    .xi-close-circle-o {font-size: 30px; position: absolute; top: 10px; right: 5px; color:darkblue;}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+   <link rel="stylesheet" type="text/css" href="XEIcon/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="main.js"></script>
+    <title>산학협력단</title>
+    <style>
+        .wrap{width: 100%; margin: 0 auto; background-color: ;}
+        .con{height: 100vh;}
+        .first {width: 100%;height: auto;}
+        .item h2{padding-top:80px;}
+        .item h2:after{border:1px 1px 1px 1px; color:red;}
+        .xi-minus{font-size: 100px; color: crimson;padding:10px; }
+        .xi-plus-min{color: crimson; font-weight:bold;}
+        .item p{line-height: 24px;padding: 10px;}
+        .item .text{text-align: center; line-height: 40px;}
+   
+        
+        @media screen and (max-width:767px){
+        .item img{display: block; width: 100%; height: auto; }
+        .tit_wrap{height: 150px;}
+        .tit{column-count: 1; }
+        .tit li{height: 250px; text-align: center;margin-bottom: 20px;}
+        .cir_box{column-count:3; }
+        .ban_box button{width: 180px;height: 50px;}
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1024px){
+        .item img{display: block; width: 100%; height: auto; }
+        .tit{column-count: 1; }
+        .tit li{height: 250px; text-align: center; font-size: 24px;}
+        h2,h3{font-size: 30px;}
+        }
+        
+        @media screen and (min-width:1024px){
+        .first{width: 60%; margin: 0 auto; height: auto; }
+        .first_box{column-count:1; text-align: center;}
+        .first_box li{margin-top: 60px;}
+        .first_box img{display:block; width: 50%; height: 50%; margin: 0 auto;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+       <header class="hd">
+       <div class="logo"><a href="index.html"><img src="./img/logo.png" alt=""></a></div>
+        <nav class="gnb">    
+            <div class="tap"><i class="xi-bars"></i></div>
+            <div class="menu">
+                <ul class="menu_box">
+                    <li class="sub_m sub_m1"><a>대학소개</a>
+                    <ul class="sub sub1-1">
+                            <li><a href="sub1.html">이념 및 역사</a></li>
+                             <li><a href="sub1-1.html">대학 상징</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub_m sub_m2"><a>입학</a>
+                         <ul class="sub sub2-1">
+                            <li><a href="sub2.html">대학입학</a></li>
+                            <li><a href="sub2-2.html">외국인입학</a></li>
+                        </ul></li>
+                    <li class="sub_m sub_m3"><a>교육</a>
+                         <ul class="sub sub3-1">
+                            <li><a href="sub3.html">대학</a></li>
+                        </ul></li>
+                    <li class="sub_m sub_m4"><a>연구산학</a>
+                         <ul class="sub sub4-1">
+                            <li><a href="sub4.html">산업기술혁신지원단</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <div class="login_tap"><i class="xi-profile-o"></i></div>
+            <div class="login">
+                <div id="form1">
+                 <form action="" method="" name="frm1" id="frm01" autocomplete="on">
+                 <fieldset class="field">
+                  <i class="xi-close-circle-o"></i>
+                <legend>로그인</legend>
+                <label for="m_id">아이디</label> : 
+                <input type="text" id="m_id" name="id" title="" size="30" maxlength="10" tabindex="1" placeholder="" autofocus required pattern="[a-zA-Z0-9]{4,10}"><br><br>
+                <label for="m_pw">비밀번호</label> : 
+                <input type="password" id="m_pw" name="pw" title="" autocomplete="off" required pattern="[a-zA-Z0-9]{10}"><br>
+                  <div class="lc">
+                 <input type="submit" value="로그인" class="">
+                 <input type="reset" value="취소">
+                 </div>
+                </fieldset>
+                </form>   
+                </div>
+            </div>
+        </nav>
+    </header>
+        <main class="con">
+           <div class="first">
+               <ul class="first_box">
+                <li class="item item1">
+                   <img src="./img/sub4.png" alt="">
+                    <h2>중앙대학교 산업기술혁신지원단</h2>
+                    <i class="xi-minus"></i>
+                    <p>한국에 대한 일본의 반도체 핵심소재 수출 규제와 수출심사 우대대상 국가 제외 조치로 인해 어려움을 겪고 있는 국내 기업들의 기술자립화와 기술경쟁력 확보를 돕기 위해, 중앙대학교의 관련 분야 교수들이 보유한 첨단 기술과 R&amp;D 인프라를 지원하기 위해 만들어졌습니다. 특히 소재, 부품, 장비, SW 분야 중소기업들의 애로기술을 맞춤형 컨설팅과 기술이전, 그리고 공동 연구개발을 통해 신속히 해결해줌으로써, 기업의 글로벌 경쟁력 제고와 원천기술 확보에 기여하고자 합니다.</p>
+                </li>
+                <li class="item item4">
+                    <h2>구성</h2>
+                    <i class="xi-minus"></i>
+                    <p >중앙대학교 미래융합원 산하에 '산업기술혁신지원단'을 신설하며, 운영위원회와 산학협력위원회 그리고 아래의 5개 분과로 구성<br></p>
+                    <p class="text">
+                    <i class="xi-plus-min"></i>반도체·디스플레이소재 분과<br>
+                    <i class="xi-plus-min"></i>화학생물소재 분과<br>
+                    <i class="xi-plus-min"></i>에너지소재 분과<br>
+                    <i class="xi-plus-min"></i>기계·부품 분과<br>
+                    <i class="xi-plus-min"></i>컴퓨터소프트웨어 분과</p>
+                </li>
+             </ul>
+           </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="XEIcon/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="main.js"></script>
+    <title>대학소개</title>
+    <style>
+        .wrap{width: 100%; margin: 0 auto; background-color: aliceblue;}
+        h1, h2,h3{text-align: center;}
+        .tit_wrap{ background-position: center;}
+        h1{line-height: 60px;}
+        h2{margin-top: 10px;margin-bottom: 20px;}
+        h3{margin-top: 10px; margin-bottom: 10px; color:darkblue;}
+        .tit {width: 90%; margin: 0px auto;}
+/*        .tit li {border: 1px solid black;}*/
+        .tit li a{color:black; line-height: 30px;}
+        .ico{font-size: 50px; color: dodgerblue; }
+        @media screen and (max-width:767px){
+        .tit_wrap{height: 150px;}
+        .tit{column-count: 1; }
+        .tit li{height: 250px; text-align: center;margin-bottom: 20px;}
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1024px){
+        .tit_wrap{ margin: 30px auto;}
+        .tit{column-count: 1; }
+        .tit li{height: 250px; text-align: center; font-size: 24px;}
+        h2,h3{font-size: 30px;}
+        }
+        
+        @media screen and (min-width:1280px){
+        .tit{column-count: 1; margin: 40px auto;}
+        .tit li{height: 200px; text-align: center; margin-top: 60px; }
+        .con{width: 50%; margin: 0 auto;}
+      } 
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+       <div class="logo"><a href=""><img src="./img/logo.png" alt=""></a></div>
+        <nav class="gnb">    
+            <div class="tap"><i class="xi-bars"></i></div>
+            <div class="menu">
+                <ul class="menu_box">
+                    <li class="sub_m sub_m1"><a>대학소개</a>
+                    <ul class="sub sub1-1">
+                            <li><a href="sub1.html">이념 및 역사</a></li>
+                             <li><a href="sub1-1.html">대학 상징</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub_m sub_m2"><a>입학</a>
+                         <ul class="sub sub2-1">
+                            <li><a href="sub2.html">대학입학</a></li>
+                            <li><a href="sub2-2.html">외국인입학</a></li>
+                        </ul></li>
+                    <li class="sub_m sub_m3"><a>교육</a>
+                         <ul class="sub sub3-1">
+                            <li><a href="sub3.html">대학</a></li>
+                        </ul></li>
+                    <li class="sub_m sub_m4"><a>연구산학</a>
+                         <ul class="sub sub4-1">
+                            <li><a>산업기술혁신지원단</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <div class="login_tap"><i class="xi-profile-o"></i></div>
+            <div class="login">
+                <div id="form1">
+                 <form action="login_check.php" method="" name="frm1" id="frm01" autocomplete="on">
+                 <fieldset class="field">
+                  <i class="xi-close-circle-o"></i>
+                <legend>로그인</legend>
+                <label for="m_id">아이디</label> : 
+                <input type="text" id="m_id" name="id" title="" size="30" maxlength="10" tabindex="1" placeholder="" autofocus required pattern="[a-zA-Z0-9]{4,10}"><br><br>
+                <label for="m_pw">비밀번호</label> : 
+                <input type="password" id="m_pw" name="pw" title="" autocomplete="off" required pattern="[a-zA-Z0-9]{10}"><br>
+                  <div class="lc">
+                 <input type="submit" value="로그인" class="">
+                 <input type="reset" value="취소">
+                 </div>
+                </fieldset>
+                </form>   
+                </div>
+            </div>
+        </nav>
+    </header>
+        <main class="con">
+            <div class="tit_wrap">
+            <h1>인류사회에 기여하는 창의인재, 중앙</h1>
+            </div>
+                <ul class="tit">
+               <li>
+               <i class="ico xi-lightbulb"></i>
+                <h3 class="tit_tit">지식 창출로 미래를 선도하는 대학</h3>
+                <a href="">미래를 선도하는 혁신적인 연구성과
+                창출로 인류에 기여
+                융·복합 저변 확대를 통한 연구
+                시너지 창출
+                전방위 협력을 통한 지식 생산 및 확산의 가속화
+                </a>
+                </li>
+                <li>
+                 <i class="ico xi-stumbleupon-circle"></i>
+                <h3  class="tit_tit">학생의 성공을 지원하는 대학</h3><a href="">미래 세대를 위한 新 패러다임의 혁신적 교육 제공
+교육의 성과를 배가시키는 다양한 경험의 기회 제공
+전주기 학생 지원 체계를 통한 진로목표 달성의 지원</a>
+        </li>
+                <li>
+                <i class="ico xi-globus"></i>
+                <h3 class="tit_tit">세계를 연결하는 글로벌 허브 대학</h3><a href="">온·오프라인을 포괄하는 명실상부한 국제화 환경 조성
+다양한 문화권의 인재 간 물리적, 화학적 융합의 촉진
+해외 대학 전략적 제휴를 통한 상호호혜적 교류 활동 강화</a></li>
+            </ul>
+        </main>
+    </div>
+</body>
+</html>
