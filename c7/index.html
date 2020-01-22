@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="men, hairstyle, barbershop,haircut">
+    <meta name="description" content="we are Ben's barbershop">
+    <title>Ben's barbershop</title>
+    <link rel="shorcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Jomolhari&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0;padding: 0;}
+        body, html{}
+        ul{list-style: none;}
+        a{text-decoration: none; color:black; }
+        input, button{outline: 2px; background: transparent; color:white;}
+        .wrap{width: 100%; margin: 0 auto; position: relative;}
+/*        .new_wrap{background-color: black; margin: 0 auto;}*/
+        .hd .main_content .main_content2 .ft{clear: both; margin: 0 auto;}
+        .hd{height:200px;}
+        .gnb{width: 1800px; margin: 0 auto;}
+        .mainmenu{width: 1000px; height: 180px; margin: 0 auto;}
+        .gnb li{width: 200px; float:left; margin: 0 auto;}
+        .gnb li a.dp1{width: 220px; height: 80px; line-height: 80px; display:block; float: left; margin: 30px auto;text-align: center; font-size: 20px; }
+        .gnb li .logo{display:block; width: 150px; margin: 0 auto;}
+        /*        hover 효과*/
+        .gnb li a.dp2:hover {background: black; color: white; font-weight: bold; transition: 0.5s;}
+        .main_content {width: 100%; margin: 0 auto; min-width:1400px; margin: 0 auto;position: relative; margin-top: 90px;}
+        .main_content{width: 100%; min-width:1400px; }
+        #vs{ margin: 0 auto; height:100vh; }
+        #vs h1{width: 830px; position: absolute; color:white; top:400px; left: 530px; font-size: 60px; text-align: center; border: 0.3px solid white;}
+        .main_content2{width: 100%;  position: relative; margin: 0 auto; background: black; height: 1200px; font-family: 'Bad Script', cursive;}
+        #vs img {display: block; width:100%; margin: 0 auto;}
+        #vs2 p{font-size: 24px; padding-top:250px; padding-left: 50px;}
+        #vs2 .hid_box2 p.su{padding-top: 350px; padding-left: 40px;}
+        #vs2{width:1600px; position: relative; margin:0px auto;}
+/*        .main_content2 h2{position: absolute; color:white; width: 197px}*/
+        .main_content2 img{width: 1420px; display: block; margin: 0px auto; border: 4px solid ; background: transparent;}
+        #vs2 .hid_box1 {width: 330px;height: 400px; position: absolute; z-index: 50; top:85px; left: 162px;color:transparent;  transition: 0; color:transparent; background: transparent; }
+        #vs2 .hid_box2{width: 340px;height: 550px; position: absolute; z-index: 50; top:530px; left: 160px; font-weight: bold; transition: 0; color:transparent; background: transparent; }
+        #vs2 .hid_box3{width: 420px;height: 630px; position: absolute; z-index: 50; top:450px; right:170px; font-weight: bold; transition: 0; color:transparent; background: transparent; }
+/*        main2 hover효과*/
+        #vs2 .hid_box1:hover {visibility: visible; color:white; font-weight: bold; background:rgba(0,0,0,0.4); transition: 0.4s; border: 1px solid gray;}
+        #vs2 .hid_box2:hover {visibility: visible; transition: 0.4s; font-weight: bold; color:white; background:rgba(0,0,0,0.4); transition: 0.4s; border: 0.5px solid gray;}
+        #vs2 .hid_box3:hover {visibility: visible; transition: 0.4s; font-weight: bold; color:white; background: black; background:rgba(0,0,0,0.4); transition: 0.4s; border: 0.5px solid gray;}
+         .ft{width: 100%; background: black; color: white; font-size:14px;}
+        .ft_box{width: 1600px; height: 320px; margin: 0 auto; border-top: 0.4px solid  }
+        .ft li{float: left; width: 530px; }
+        .ft li a{color: white; margin: 0 auto ;}
+        .address {width: 100px; height: 200px; text-align: center; line-height: 20px; margin-top: 60px;}
+        .logo .logo_box{width:210px; margin: 0 auto;}
+        .logo img{width: 200px;}
+        .logo .sns{width: 380px; text-align: center;margin: 0 auto; }
+        .logo .sns a{font-size:14px; line-height: 80px}
+        .hl{ text-align: center; margin: 10px auto;}
+        .hl a{display: block; width: 400px; margin-top: 20px;}
+        .lj{width: 220px; height: 50px; margin: 0 auto; padding-top: 30px;}
+        .lj a{width: 108px;display: block; float: left; margin: 0 auto; text-align: center; border: 1px solid white; }
+        #form1{ position:fixed; top:20px; left: 750px; z-index: 999; visibility:hidden; opacity: 1; color:white; font-weight: 200; }
+        #form1 form .field{width: 100px;}
+        #form1:target {visibility: visible; opacity: 2;}
+        #form2{position:fixed; top:10px; left: 600px; z-index: 999; visibility:hidden; opacity: 1; color:white; font-weight: 200; }
+        #form2:target {visibility: visible; opacity: 2;}
+        .jc, .lc{margin-right: 0px; margin-top: 20px;}
+        .close1, .close2{display:block; width: 20px; height: 20px; color: white; float: right; margin-right: 30px}
+/*        .close2{display:block; color: white; width: 20px; height: 20px; color: white; float: right; margin-right: 20px}*/
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_wrap">
+                <nav class="gnb">
+                    <ul class="mainmenu">
+                        <li><a href="sub1.html" class="dp1 dp2">LOCATION</a></li>
+                        <li><a href="sub2.html" class="dp1 dp2">SERVICE</a></li>
+                        <li><a href="index.html" class="dp1"><img class="logo" src="./main/logo.png" alt="로고"></a></li>
+                        <li><a href="sub3.html" class="dp1 dp2">ABOUT US</a></li>
+                        <li><a href="sub4.html" class="dp1 dp2">GALLERY</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <div class="new_wrap">
+        <section class="main_content">
+            <figure id="vs">
+               <h1>BEN’S<br>
+               BARBERSHOP</h1>
+                <img src="./main/newmain.png" alt="페이지1 이미지">
+            </figure>
+        </section>
+        <section class="main_content2">
+            <figure id="vs2">
+              <img class="image1" src="./main/mainpageimage2.png" alt="image1">
+                <div class="hid_box1">
+                   <p>Designer<br>
+                    TOM<br>
+                    INSTA : TOM_hair</p>
+                </div>
+                  <div class="hid_box2">
+                    <p class="su">Designer<br>
+                    SU<br>
+                    INSTA : SU_hair</p>
+              </div>
+                  <div class="hid_box3">
+                    <p>Designer<br>
+                    BEN<br>
+                    INSTA : BEN_hair</p>
+                  </div>
+            </figure>
+        </section>
+ <footer class="ft">
+           <ul class="ft_box">
+               <li class="address">
+                   <a>ADDRESS<br><br>
+                  Rua de Miguel Bombarda<br>
+                  65 r/c, 403-30 Porto, portugal </a>
+               </li>
+               <li class="logo">
+                    <div class="logo_box">
+                   <a href=""><img src="./main/footerlogo.png" alt="푸터로고"></a>
+                   </div>
+                   <div class="sns">
+                       <a href="https://www.instagram.com/">INSTA |</a>
+                       <a href="https://ko-kr.facebook.com/">FACEBOOK |</a> 
+                       <a href="https://www.youtube.com/?gl=KR&hl=ko">YOUTUBE</a>
+                   </div>
+               </li>
+               <li class="hl">
+                <a class="hours">HOURS<br><br>
+                MONDAY 09 AM – 7:30 PM<br>
+                TUESDAY 10 AM – 7:30 PM<br>
+                WEDNESDAY 10 AM – 7:30 PM<br>
+                THURSDAYS 10 AM – 7:30 PM<br>
+                FRIDAY 12 AM – 8:00 PM<br>
+                SATURDAY 12 AM – 8:00 PM<br>
+                SUNDAY 12 PM – 7 PM</a>
+                    <div class="lj">
+                    <a href="#form1">LOGIN</a>
+                    <a href="#form2">JOIN</a>
+                    </div>
+               </li>
+           </ul>
+        </footer>
+        <div id="form1">
+        <a href="#" class="close1">CLOSE</a>
+         <form action="" method="" name="frm1" id="frm01" autocomplete="on">
+            <fieldset class=field>
+            <legend>LOGIN</legend>
+            <label for="m_id">ID</label> : 
+            <input type="text" id="m_id" name="id" title="" size="30" maxlength="10" tabindex="1" placeholder="" autofocus required pattern="[a-zA-Z0-9]{4,10}"><br><br>
+            <label for="m_pw">PASSWORD</label> : 
+            <input type="password" id="m_pw" name="pw" title="" autocomplete="off" required pattern="[a-zA-Z0-9]{10}"><br>
+            </fieldset>
+             <div class="lc">
+             <input type="submit" value="LOGIN" class="">
+             <input type="reset" value="CANCLE">
+             </div>
+            </form>   
+        </div>
+        <div id="form2">
+        <a href="#" class="close2">CLOSE</a>
+        <form action="" method="" name="frm2" id="frm02" autocomplete="on">
+        <fieldset>
+            <legend>JOIN INFORMATION</legend>
+            <label for="m_id">ID</label> : 
+            <input type="text" id="m_id" name="id" title="" size="80" maxlength="10" tabindex="1" placeholder="" autofocus required pattern="[a-zA-Z0-9]{4,10}"><br><br>
+            <label for="m_pw">PASSWORD</label> : 
+            <input type="password" id="m_pw" name="pw" title="" autocomplete="off" required pattern="[a-zA-Z0-9]{10}"><br><br>
+            <label for="m_pw2">PASSWORD CHECKING</label> : 
+            <input type="password" id="m_pw2" name="pw2" title="PASSWORD" autocomplete="off" required><br><br>
+            <input type="text" id="m_name" name="name" placeholder="NAME" value="" readonly required ><br><br>
+            <input type="email" name="email" id="m_email" pattern="^[a-z0-9_+.-]+@([a-z0-9-]+\.)+[a-z0-9]{2,4}$" placeholder="E-MAIL" required><br><br>
+            <input type="tel" name="tel" id="m_tel" pattern="0\d{1,2}\-\d{3,4}\-\d{4}\" placeholder="TELEPHONE"><br><br>
+            <input type="text" name="email2" id="m_email2" placeholder="E-MAIL" pattern="^[a-zA-Z0-9]">@
+            <select name="email3" id="m_email3">
+                <option value="">CHOOSE</option>
+                <option value="naver.com">GOOGLE</option>
+                <option value="google.com">NAVER</option>
+                <option value="daum.net">HANMAIL</option>
+            </select><br><br>
+            <div class="jc">
+             <input type="submit" value="JOIN" class="">
+             <input type="reset" value="CANCLE">
+             </div>
+        </fieldset>
+    </form>
+    </div>
+</div>
+</div>
+</body>
+</html>
