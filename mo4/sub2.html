@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <script src="./jquery/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>Document</title>
+    <style>
+        .slide_box {
+            width: 100%;
+        }
+
+        .slide_box img {
+            background-image: url(sub2-1.png);
+            background-position: left;
+            margin-top: 70px;
+        }
+
+        .slide {
+            width: 180px;
+            height: 300px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .slide ul {
+            width: 540px;
+            height: 300px;
+            margin-top: 50px;
+        }
+
+        .slide li {
+            width: 180px;
+            height: 300px;
+            max-width: 360px;
+            float: left;
+        }
+
+        .pr_box {
+            width: 360px;
+            height: auto;
+            margin: 100px auto;
+        }
+
+        .pr_box img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 0px 0.8px 0px black;
+            box-sizing: content-box;
+        }
+
+        .pr_box h2 {
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            line-height: 150px;
+            font-size: 40px;
+        }
+
+        .pr_box .vs li {
+            float: left;
+            width: 50%;
+            height: auto;
+            text-align: center;
+        }
+
+        .M_box {
+            height: auto;
+        }
+
+        .M_box h3 {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .M_box p {
+            font-family: 'Nanum Gothic', sans-serif;
+            margin: 20px;
+            height: auto;
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".xi-apps").click(function() {
+                $("#gnb").fadeIn(500)
+            });
+            $(".xi-close").click(function() {
+                $("#gnb").fadeOut(500)
+            });
+        });
+        $(document).ready(function() {
+            $(".btn2 a").click(function() {
+                $(".slide2").fadeIn(500)
+                $(".slide1").fadeOut(500)
+            });
+            var ls = $(".slide ul");
+
+            function ani() {
+                ls.delay(1500).animate({
+                    "margin-left": "-180px"
+                }, 500);
+                ls.delay(1500).animate({
+                    "margin-left": "-360px"
+                }, 500);
+                //                ls.delay(1500).animate({"margin-left":"-540px"},500);
+                ls.delay(1500).animate({
+                    "margin-left": "0px"
+                }, 500);
+            }
+            ani();
+            setInterval(function() {
+                ani();
+            }, 6000);
+        });
+
+    </script>
+</head>
+
+<body>
+    <header class="hd">
+        <label for="ck1" class="la1">
+            <i class="xi-apps"></i>
+        </label>
+        <div class="logo">
+            <a href="index.html">
+                LOREAL KOREA</a>
+        </div>
+    </header>
+    <nav id="gnb">
+        <i class="xi-close"></i>
+        <ul class="sub">
+            <li class="sub1"><a href="sub1.html" class="sa">로레알코리아</a></li>
+            <li class="sub2"><a class="sa">Product</a>
+                <ul class="sub_s">
+                    <li><a href="sub2.html">MAKE UP</a></li>
+                    <li><a href="sub2-1.html" class="sa">HAIR</a></li>
+                </ul>
+            </li>
+            <li class="sub3"><a href="sub3.html" class="sa">News/media</a></li>
+        </ul>
+    </nav>
+    <div class="slide">
+        <ul class="slide_box">
+            <li class="slide1">
+                <img src="./img/sub2-1.png" alt="">
+                <p></p>
+            </li>
+            <li class="slide2"><img src="./img/sub2-2.png" alt=""></li>
+            <li class="slide3"><img src="./img/sub2-3.png" alt=""></li>
+            <li class="slide4"><img src="./img/sub2-4.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="pr_box">
+        <figure class="vs">
+            <div class="tit_box">
+                <h2>Make up</h2>
+            </div>
+            <ul class="M_box">
+                <li><img src="./img/sub2-5.jpg" alt="">
+                    <h3>프로 매트 리퀴드<br>
+                        립스틱</h3>
+                    <p>번짐 방지 울트라 매트 탑코트
+                        컵에 찍힌 립스틱 자국 이제 안녕!공기처럼 가벼운 밀착포뮬라</p>
+                </li>
+                <li><img src="./img/sub2-6.jpg" alt="">
+                    <h3>
+                        파운데이션<br>SPF25 PA+++</h3>
+                    <p>롱 라스팅을 넘어서 하루 종일 프레쉬한 피부 표현을 가능하게 해주는 인팔리블 프레쉬웨어<br> 파운데이션</p>
+                </li>
+                <li><img src="./img/sub2-7.jpg" alt="">
+                    <h3>리쉬 모이스트 매트<br>
+                        립스틱</h3>
+                    <p>시선을 유혹하는 선명함
+                        촉촉함이 머무르는 반전 매트 립스틱</p>
+                </li>
+                <li><img src="./img/sub2-8.jpg" alt="">
+                    <h3>
+                        트루 매치<br>파운데이션</h3>
+                    <p>NO.1 톤업 파운데이션. 화사한 컬러가 가볍게 밀착되어 매끈한<br> 파운데이션</p>
+                </li>
+            </ul>
+        </figure>
+    </div>
+</body>
+
+</html>

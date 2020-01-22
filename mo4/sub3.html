@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .con {
+            width: 100%;
+            height: auto;
+        }
+
+        .news_box1 {
+            padding-top: 90px;
+            border-bottom: 0.5px solid black;
+            padding-bottom: 50px;
+        }
+
+        .news_box2 {
+            margin-top: 50px;
+            border-bottom: 0.5px solid black;
+            padding-bottom: 50px;
+        }
+
+        .news_box3 {
+            margin-top: 50px;
+        }
+
+        .tit_box {
+            width: 100%;
+            height: 60px;
+            background: black;
+        }
+
+        .tit_box h2 {
+            color: white;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        .con h3 {
+            width: 60%;
+            margin: 20px auto;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .con h4 {
+            line-height: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .con img {
+            width: 100%;
+        }
+
+        .con p {
+            font-size: 14px;
+            text-indent: 1em;
+            line-height: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+            $(".xi-apps").click(function() {
+                $("#gnb").fadeIn(500)
+            });
+            $(".xi-close").click(function() {
+                $("#gnb").fadeOut(500)
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header class="hd">
+        <label for="ck1" class="la1">
+            <i class="xi-apps"></i>
+        </label>
+        <div class="logo">
+            <a href="index.html">
+                LOREAL KOREA</a>
+        </div>
+    </header>
+    <nav id="gnb">
+        <i class="xi-close"></i>
+        <ul class="sub">
+            <li class="sub1"><a href="sub1.html" class="sa">로레알코리아</a></li>
+            <li class="sub2"><a class="sa">Product</a>
+                <ul class="sub_s">
+                    <li><a href="sub2.html">MAKE UP</a></li>
+                    <li><a href="sub2-1.html" class="sa">HAIR</a></li>
+                </ul>
+            </li>
+            <li class="sub3"><a href="sub3.html" class="sa">News/media</a></li>
+        </ul>
+    </nav>
+    <div class="wrap">
+        <main class="con">
+            <ul class="news_box1">
+                <div class="tit_box">
+                    <h2>News/media</h2>
+                </div>
+                <li><img src="./img/sub3-1.jpg" alt="">
+                    <h3>로레알, 인도시장<br> 야심찬 계획 추진</h3>
+                    <p>인도의 타임 오브 인디아에 의해 발행된 보고서에 따르면,
+                        로레알 장 폴 아곤(Jean Paul Agon) CEO는 2022년까지
+                        인도 사업 규모를 2배로 늘리고 소비자 수를 2배로 늘린다는 계획이라고 밝혔다.</p>
+                    <h4>2019.11.28</h4>
+                </li>
+            </ul>
+            <ul class="news_box2">
+                <!--
+                <div class="tit_box">
+               </div>
+-->
+                <li><img src="./img/sub3-2.jpg" alt="">
+                    <h3>로레알코리아 ‘2020 윈터 인턴십’ 모집</h3>
+                    <P>로레알코리아가 11월 10일까지 ‘2020 윈터 인턴십’ 지원자를 모집한다.
+
+                        신입 채용 전환형으로 대학 재학생은 물론 휴학생과 기졸업자도 지원 가능하다. 2개월 과정과 6개월 과정으로 모집하며 전공과 무관하게 마케팅, 디지털, 홍보, 판매 등의 분야에 지원할 수 있다. </P>
+                    <h4>2019-10-29</h4>
+                </li>
+            </ul>
+            <ul class="news_box3">
+                <!--
+                <div class="tit_box">
+               </div>
+-->
+                <li><img src="./img/sub3-3.jpg" alt="">
+                    <h3>로레알, AI에 기반한 피부 진단법 출시</h3>
+                    <P>글로벌 화장품 기업 로레알(회장 장 폴 아공)의 R&amp;(Research&amp;Innovation)팀은 피부노화 분야에서 15년 간 축적된 과학적 연구를 기반으로 소비자를 위한 디지털 피부 진단법을 발표했다. 최근 인수한 증강현실(AR), 인공지능(AI) 기업 모디페이스(ModiFace)와 함께다.
+
+
+
+                        이번에 새로 개발된 피부 진단 기술은 모디페이스의 인공지능(AI) 기반 알고리즘에 로레알의 피부 노화 전문 지식과 사진 데이터베이스가 더해져 완성됐다. </P>
+                    <h4>2019-10-29</h4>
+                </li>
+            </ul>
+
+        </main>
+    </div>
+</body>
+
+</html>
