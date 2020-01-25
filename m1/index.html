@@ -24,7 +24,7 @@
     .slide_box:after{content: ""; display: table; clear: both;}
     .tap_box:after{content: ""; display: table; clear: both;}
     .slide_box{position: relative; margin-top: 60px;}
-    .slide_box img{width: 100%; display: block; margin: 0 auto;}
+    .slide_box img{width: 100%; height: 100%; display: block; margin: 0 auto;}
 /*fast_ico*/
     .con_box li a{}
     .con_box li a i{margin: 0 auto;}
@@ -33,9 +33,11 @@
 /*   notice    */
     .tit{display: block; text-align:center; width: 120px; font-weight: bold; line-height: 50px; font-size: 24px; color:black; margin-top: 60px;}
     .slide_tit{position: absolute; font-size: 40px; text-align: center; font-weight: bold; text-shadow: 1px 1px 1px gray;}
-    #ra1:checked~.notice{display: block;}
-    #ra2:checked~.news{display: block;}
-    .notice{width: auto; margin: 0 auto; position: relative; display: none;}
+    #ra1:checked~ .notice{display: block;}
+    #ra1:checked~ .news{display: none;}
+    #ra2:checked~ .news{display: block;}
+    #ra2:checked~ .notice{display: none;}
+    .notice{width: auto; margin: 0 auto; position: relative; }
     .notice:after{content: ""; display: table; clear: both;}
     .notice li{width: auto; height: auto; margin-top: 60px; position: relative;}
     .notice li a{display: block; margin: 0 auto;}
@@ -45,9 +47,6 @@
     .news li{margin-bottom: 30px; margin: 0 auto;}
     .news img{width:100%; height: auto; display: block; margin: 0 auto;}
     .hd h2{text-align: center;}
-    .ft{ width: 100%; background:#003399; position: relative; max-width: 100%; height:auto;}
-/*    .ft_wrap{width: 100vw;height: 100px; background: black; }*/
-    .ft p{text-align: center; color:white;line-height: 30px; font-size: 14px;}
     #ra1, #ra2{display: none;}
     .la_box{width:90vw; margin: 50px auto;position: relative; height: 80px;}
     .la2_box{width: 90vw; margin: 0 auto; text-align: centerl}
@@ -59,8 +58,8 @@
     .text_tit2{width: auto; margin: 0 auto; font-size: 20px; font-weight: bold; color:darkblue; margin-top: 20px;}
     .notice img, .news img{box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3); }
     /*    sche*/
-    .sche{ width: 100%; margin: 0px auto; height: 30vh; text-align: center; padding-top: 5%; position: relative;}
-    .sc_tit{font-size: 24px; font-weight: bold; text-align: center;margin-bottom: 30px; }
+    .sche{ width: 100%; margin: 0px auto; text-align: center; position: relative;}
+    .sc_tit{font-size: 24px; font-weight: bold; text-align: center;}
     .sche li{background-color:lightsteelblue;}
     .sche li a{color:midnightblue; line-height: 50px; font-size: 18px; font-weight: bold; }
     .sc_ico{font-size: 50px; color:darkblue;line-height: 60px;}
@@ -88,7 +87,8 @@
     .notice{column-count: 1; }
     .news{display:flex; flex-direction:column; justify-content: center;}
     .news li{margin: 10px;}
-    .sche{column-count: 2; height: 400px; margin-top: 50px;}
+    .sche{column-count: 2; height: 400px; padding: 70px auto;}
+    .sc_tit{font-size: 24px; font-weight: bold; text-align: center; margin: 30px;}
     .sche li{height: 120px; }
     .s2, .s4{margin-top: 20px;}
     .hid_box{column-count: 2; height:300px;}
@@ -106,41 +106,46 @@
     .con_box{display: flex; flex-direction: row; justify-content: center;}
     .con_box span{padding-bottom: 10px;}
     .con_box li{padding:6px 15px;;}
-    .notice{display: flex; flex-direction: column; justify-content: center; width: 90vw; margin: 0 auto;}
+    .notice{display: flex; flex-direction: column; justify-content: center; width: 90%; margin: 0 auto;}
     .fast_ico{font-size: 50px; padding: 10px;}
-    .news{column-count: 2; width: calc(100%-200px); margin: 0 auto;}
+    .news{column-count: 2; width: 90%; margin: 0 auto;}
     .news li{float: left;}
     .la2_box{width: 40vw; margin: 0 auto;}
-    .sche{column-count: 4; margin-top: 100px;}
+    .sche{display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center; margin: 60px auto;}
+    .sche li{margin: 30px; padding: 20px 20px;}
     .slide{width: 691px; height: auto; margin: 0 auto;}
     .slide_box{width: 2073px;}
     .slide_box li{width: 691px;}
     .la_box{column-count: 2;}
     .news{column-count: 3}
+    .text_tit2{margin: 30px auto;position: relative; font-size:19px; text-align: center;}
+    .text2{margin: 20px auto;position: relative; }
     } 
 /*        데스크탑*/
      @media screen and (min-width:1280px){
     .hd{height: 100px;}
     .login_tap{right: 35px;}
     .con{width: 90%; margin: 0 auto;}
-    .la_box{width: 90%; margin: 20px auto;}
-    .la_box label{display: block; float: left; width:25vw;height: 80px;}
+    .la_box{width: 72%; margin: 20px auto;}
+    .la_box label{display: block; float: left; width:32.5vw;height: 80px;}
     .con_box_wrap{width: 50%; margin: 0 auto;}
     .con_box{display: flex; flex-direction: row; justify-content: center; width: 60%; margin: 0 auto;}
     .con_box li{padding: 10px;}
     .con_box span{padding-bottom: 10px;}
     .fast_ico{font-size: 55px; padding:5px 20px;}
-    .notice {width: 80%; margin: 0 auto; display:flex; flex-direction: row; justify-content: space-around; width: 90%; margin: 0 auto;}
-    .notice li{float: left; margin-left: 50px;}
+    .notice {width: 88%; display:flex; flex-direction: row; justify-content: center; margin: 0 auto;}
+    .notice li{float: left;}
     .notice img{display: block; height: auto; width: 70%; margin: 0 auto;}
-    .news{column-count: 3;}   
+    .news{width: 80%; margin: 0 auto;column-count: 3;}   
     .news li{float: left;}
     .news img{width: 70%; margin-left: 70px;}
     .text_tit{width: 100%; margin: 0 auto;font-size: 20px; font-weight: bold; color:darkblue; margin-top: 30px; text-align: center;}
-    .text{width: 100%; margin: 10px auto;position: relative;text-align: center;}
-    .text_tit2{width: 64%; margin: 20px auto;position: relative; font-size:19px;}
-    .text2{width: 64%; margin: 10px auto;position: relative;}
-    .sche{column-count: 4; width: 100%; margin: 0 auto;}
+    .text{width: 100%; margin: 10px auto;position: relative; text-align: center;}
+    .text_tit2{width: 64%; margin: 30px auto;position: relative; font-size:19px; text-align: center;}
+    .text2{width: 64%; margin: 20px auto;position: relative; text-align: center;}
+    .sc_tit{margin-top: 70px;}
+    .sche{display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center; margin: 60px auto;}
+    .sche li{margin: 30px; padding: 20px 20px;}
     .hid_box1{column-count:1; width:420px; height: 110px; bottom: 30px; left:0px; }
     .hid_box2{column-count: 1; width: 420px; height: 110px; left: 435px; bottom: 30px;}
     .slide{width: 1382px; height: auto; margin: 0 auto;}
@@ -153,7 +158,7 @@
 <body>
    <div class="wrap">
     <header class="hd">
-       <div class="logo"><a href=""><img src="./img/logo.png" alt=""></a></div>
+       <div class="logo"><a href="index.html"><img src="./img/logo.png" alt=""></a></div>
         <nav class="gnb">    
             <div class="tap"><i class="xi-bars"></i></div>
             <div class="menu">
@@ -161,7 +166,7 @@
                     <li class="sub_m sub_m1"><a>대학소개</a>
                         <ul class="sub sub1-1">
                             <li><a href="sub1.html">이념 및 역사</a></li>
-                             <li><a href="sub1-2.html">대학 상징</a></li>
+                             <li><a href="sub1-1.html">대학 상징</a></li>
                         </ul>
                     </li>
                     <li class="sub_m sub_m2"><a>입학</a>
@@ -204,12 +209,12 @@
     </header>
     <section class="con">
       <ul class="con_box">
-        <li><a href=""><i class="fast_ico xi-alarm-clock"></i><span>시간표</span></a></li>
-        <li><a href=""><i class="fast_ico xi-calendar-check"></i><span>학사일정</span></a></li>
-        <li><a href=""><i class="fast_ico xi-map-o"></i><span>캠퍼스맵</span></a></li>
-        <li><a href=""><i class="fast_ico xi-comment-o"></i></a><span>커뮤니티</span></li>
-        <li><a href=""><i class="fast_ico xi-paper"></i></a><span>포털사이트</span></li>
-        <li><a href=""><i class="fast_ico xi-book-o"></i></a><span>학사정보</span></li>
+        <li><a href="https://mportal.cau.ac.kr/std/usk/sUskSif001/search.do"><i class="fast_ico xi-alarm-clock"></i><span>시간표</span></a></li>
+        <li><a href="https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=590"><i class="fast_ico xi-calendar-check"></i><span>학사일정</span></a></li>
+        <li><a href="https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=610"><i class="fast_ico xi-map-o"></i><span>캠퍼스맵</span></a></li>
+        <li><a href="https://cauin.cau.ac.kr/cauin/index.php"><i class="fast_ico xi-comment-o"></i></a><span>커뮤니티</span></li>
+        <li><a href="https://mportal.cau.ac.kr/main.do"><i class="fast_ico xi-paper"></i></a><span>포털사이트</span></li>
+        <li><a href="https://mportal.cau.ac.kr/std/pis/sPisApp001/index.do"><i class="fast_ico xi-book-o"></i></a><span>학사정보</span></li>
       </ul>
       <div class="slide">
       <ul class="slide_box">
@@ -244,30 +249,38 @@
     <p class="tit"></p>
     <ul class="news">
         <li><a href=""><img src="./img/img3.jpg" alt=""></a>
-            <p class="text_tit2">전자전기공학부 연구팀,</p>
+            <p class="text_tit2">전자전기공학부 연구팀</p>
             <p class="text2">차세대 고성능 이미지 센서<br>핵심 기술 개발
           </p>
         </li>
         <li><a href=""><img src="./img/img4.jpg" alt=""></a>
-         <p class="text_tit2">2019 KUSF 대학축구 U-리그왕중왕전 우승
+         <p class="text_tit2">2019 KUSF 대학축구 U-리그<br>왕중왕전 우승
           </p>
         </li>
         <li><a href=""><img src="./img/img5.jpg" alt=""></a>
-        <p class="text_tit2">산학협력단,
+        <p class="text_tit2">산학협력단
         <p class="text2">2019년 산학협력 EXPO에서 대상 수상 및 총 6개 분야 수상</p>
-
         </li>
     </ul>
     <p class="sc_tit">주요일정</p>
     <ul class="sche">
-        <li class="s1"><a href="">동계계절학기</a><br><i class="sc_ico xi-school"></i></li>
-       
-        <li class="s2"><a href="">2학기성적조회</a><br><i class="sc_ico xi-file-check-o"></i></li>
+        <li class="s1">
+            <a href="https://mportal.cau.ac.kr/main.do">동계계절학기</a>
+            <i class="sc_ico xi-school"></i>
+        </li>
+        <li class="s2">
+            <a href="https://mportal.cau.ac.kr/main.do">2학기성적조회</a>
+            <i class="sc_ico xi-file-check-o"></i>
+        </li>
 
-        <li class="s3"><a href="">2학기성적정정</a><br><i class="sc_ico xi-exchange"></i></li>
-       
-        <li class="s4"><a href="">강의평가실시</a><br><i class="sc_ico xi-file-text-o"></i></li>
-        
+        <li class="s3">
+            <a href="https://mportal.cau.ac.kr/main.do">2학기성적정정</a>
+            <i class="sc_ico xi-exchange"></i>
+        </li>
+        <li class="s4">
+            <a href="https://mportal.cau.ac.kr/main.do">강의평가실시</a>
+            <i class="sc_ico xi-file-text-o"></i>
+        </li>
     </ul>
 <!--
     <ul class="hid_box">
