@@ -13,8 +13,9 @@
     .logo img{width: 100px; }
     .gnb{clear: both;margin-top: 0px; }
     .gnb li{line-height: 80px;}
-    .gnb a{color:white; display: block; text-align: center; font-size: 16px; font-family: 'Gayathri', sans-serif; 
-font-weight: bold;}
+    .gnb a{display: block; text-align: center; font-size: 16px; font-family: 'Gayathri', sans-serif; font-weight: bold;}
+    .ot{color:white;}
+    .sa{color:white;}
     .gnb .sub2{display: none;}
     .con{float: right; margin-top:80px; } 
     .con:after{content: ""; display:table; clear: both;}
