@@ -1,168 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <script src="https://code.jquery.com/jquery-latest.js"> </script>
     <script src="main.js"></script>
     <script src="./jquery.rotator.js"></script>
-     <script src="prefixfree.min.js"></script>
+    <script src="prefixfree.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Francois+One|Ma+Shan+Zheng|Roboto:700&display=swap" rel="stylesheet">
     <title>반응형 레이아웃8 - column-count</title>
     <title>Document</title>
     <style>
-        .con{background: rgba(255,255,255,0.3);}
-        .con img{display: block; width:100%; height: auto;}
-/*        .con_box{background: rgba(255,255,255,0.3);}*/
-        .page_wrap{}
-        .text_box{background: transparent;}
-        .text_box h2{color:black;text-align: right;}
-        .text_box p{color: black;}
-        .text_box p{line-height: 40px; margin-top: 30px;}
-/*        second*/
-        .second h2{color:white; font-weight: bold; margin:30px auto; text-align: center;}
-        .second p{color:black; margin: 20px auto; line-height: 30px;}
-        
-/*    textani*/
-.marvel {
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-  text-transform: uppercase;
-  display: block;
-/*  font-size: 40px;*/
-  font-weight: bold;
-/*  letter-spacing: -4px;*/
-  text-align: center;
-  background: linear-gradient(to bottom, red 0%, red 100%);
-  position: absolute;
-/*  padding: 30px 30px;*/
-/*
+        .con {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .con img {
+            display: block;
+            height: auto;
+        }
+
+        /*        .con_box{background: rgba(255,255,255,0.3);}*/
+        .page_wrap {}
+
+        .text_box {
+            background: transparent;
+        }
+
+        .text_box h2 {
+            color: black;
+            text-align: right;
+        }
+
+        .text_box p {
+            color: black;
+        }
+
+        .text_box p {
+            line-height: 40px;
+            margin-top: 30px;
+        }
+
+        /*        second*/
+        .second h2 {
+            color: white;
+            font-weight: bold;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .second p {
+            color: black;
+            margin: 20px auto;
+            line-height: 30px;
+        }
+
+        /*    textani*/
+        .marvel {
+            font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+            text-transform: uppercase;
+            display: block;
+            /*  font-size: 40px;*/
+            font-weight: bold;
+            /*  letter-spacing: -4px;*/
+            text-align: center;
+            background: linear-gradient(to bottom, red 0%, red 100%);
+            position: absolute;
+            /*  padding: 30px 30px;*/
+            /*
   top: 20%;
   left: 50%;
 */
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-}
-.typo {   animation:txtAni 4s infinite 0s; 
-          color: white;
-  text-shadow: 0 8px 9px black; }        
-@keyframes txtAni {
-    0% { opacity:0; }
-    100% { opacity:1; }
-}
-body,html {
-  height: 100%;
-} 
-        
-    
-     @media screen and (max-width:767px) {
-        .con{width:calc(100%-100px); margin-top: 80px; margin-left: 100px;}
-        .con_box{margin-top: 90px;}
-/*        .second{margin-left: 120px;}*/
-        .second li.mo{width: 90%; margin: 0 auto;}
-        .second h2{font-size: 20px;}
-        .third li{width: 60%;margin-left: 120px;}
-        .ft { width:220px; }
-        .left { width: 100px; margin-top: 100px; }
-        .ft { width:110px; }
-         .marvel{width: 160px; height: 40px;font-size: 26px; top: 20%; left: 64%; line-height: 40px;}
-*/
-    }
-    @media screen and (min-width:768px) and (max-width:1024px){
-        #first_wrap{width: auto; height: 500px;}
-        .con_box { column-count:1; margin-top: 80px;}
-        .second{column-count:1;}
-        .second li.mo{width: 60%; margin: 50px auto;}
-        .third{column-count:3; column-gap:20px; width: 90%; margin: 0 auto; margin-bottom: 40px;}
-        .left { width: 150px; margin-top: 80px; }
-        .con { width:calc(100% - 150px); margin-top: 100px; }
-        .tit_btn{height: 70px; line-height: 80px;}
-        .ft { width:150px; }
-        .marvel{width: 250px; height: 50px;font-size: 30px; top: 15%; left: 60%; line-height: 50px;}
-    }
-/*
-    @media screen and (min-width:960px) and (max-width:1279px){
-        .con_box { column-count:1; margin-top: 140px;}
-        .second{column-count:2;}
-        .third{column-count:3; column-gap:20px; width: 90%; margin: 0 auto; margin-bottom: 40px;}
-        .left { width: 150px; }
-        .con { width:calc(100% - 150px); }
-        .tit_btn{height: 70px; line-height: 80px;}
-        .ft { width:150px; }
-    }
-*/
-    @media screen and (min-width:1280px) {
-        .wrap{width: 70%; margin: 30px auto; margin-top: 160px;text-align: center;}
-        .gnb li a{font-size: 24px;}
-        .left {width:300px; margin: 0;}
-        .con {width:70%; margin: 30px auto;}
-        .mo p{width: 80%; margin: 30px auto; line-height: 24px;}
-        .ft { width:220px; }
-         .marvel{width: 250px; height: 50px;font-size: 30px; top: 15%; left: 60%; line-height: 50px;}
-    }
-        
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+
+        .typo {
+            animation: txtAni 4s infinite 0s;
+            color: white;
+            text-shadow: 0 8px 9px black;
+        }
+
+        @keyframes txtAni {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+
+        @media screen and (max-width:767px) {
+            .con {
+                width: calc(100%-100px);
+                margin-top: 80px;
+                margin-left: 100px;
+            }
+
+            .con img {
+                width: 100%;
+            }
+
+            .con_box {
+                margin-top: 90px;
+            }
+
+            /*        .second{margin-left: 120px;}*/
+            .second li.mo {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .second h2 {
+                font-size: 20px;
+            }
+
+            .third li {
+                width: 60%;
+                margin-left: 120px;
+            }
+
+            .ft {
+                width: 220px;
+            }
+
+            .left {
+                width: 100px;
+                margin-top: 100px;
+            }
+
+            .ft {
+                width: 110px;
+            }
+
+            .marvel {
+                width: 160px;
+                height: 40px;
+                font-size: 26px;
+                top: 20%;
+                left: 64%;
+                line-height: 40px;
+            }
+
+            */
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            #first_wrap {
+                width: auto;
+                height: 500px;
+            }
+
+            .con_box {
+                column-count: 1;
+                margin-top: 80px;
+            }
+
+            .con img {
+                width: 100%;
+            }
+
+            .second {
+                column-count: 1;
+            }
+
+            .second li.mo {
+                width: 60%;
+                margin: 50px auto;
+            }
+
+            .third {
+                column-count: 3;
+                column-gap: 20px;
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
+
+            .left {
+                width: 150px;
+                margin-top: 80px;
+            }
+
+            .con {
+                width: calc(100% - 150px);
+                margin-top: 100px;
+            }
+
+            .tit_btn {
+                height: 70px;
+                line-height: 80px;
+            }
+
+            .ft {
+                width: 150px;
+            }
+
+            .marvel {
+                width: 250px;
+                height: 50px;
+                font-size: 30px;
+                top: 15%;
+                left: 60%;
+                line-height: 50px;
+            }
+        }
+
+        @media screen and (min-width:1280px) {
+            .wrap {
+                width: 70%;
+                margin: 30px auto;
+                margin-top: 160px;
+                text-align: center;
+            }
+
+            .gnb li a {
+                font-size: 24px;
+            }
+
+            .left {
+                width: 300px;
+                margin: 0;
+            }
+
+            .con {
+                width: 80%;
+                margin: 30px auto;
+            }
+
+            .mo p {
+                width: 80%;
+                margin: 30px auto;
+                line-height: 24px;
+            }
+
+            .con img {
+                display: block;
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            .ft {
+                width: 220px;
+            }
+
+            .marvel {
+                width: 250px;
+                height: 50px;
+                font-size: 30px;
+                top: 15%;
+                left: 57%;
+                line-height: 50px;
+            }
+        }
+
     </style>
 </head>
+
 <body>
-   <header class="hd">
-       <div class="logo"><a href="index.html"><img src="./img/logo_white.png" alt=""></a></div>
-   </header>
+    <header class="hd">
+        <div class="logo"><a href="index.html"><img src="./img/logo_white.png" alt=""></a></div>
+    </header>
     <div class="wrap">
-    <aside class="left">
-       <nav class="gnb">
-            <ul>
-                <li><a href="sub1.html">DISNEY</a></li>
-                <li class="m2"><a>MAVLE</a>
-                <ul class="sub2">
-                    <li><a href="sub2.html">시리즈</a></li>
-                    <li><a>비하인드씬</a></li>
+        <aside class="left">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="sub1.html" class="ot">DISNEY</a></li>
+                    <li class="m2"><a class="ot">MAVLE</a>
+                        <ul class="sub2">
+                            <li><a href="sub2.html" class="sa">시리즈</a></li>
+                            <li><a href="sub2-1.html" class="sa">비하인드씬</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub3.html" class="ot">STARWARS</a></li>
+                    <li><a href="sub4.html" class="ot">EVENTS</a></li>
                 </ul>
-                </li>
-                <li><a href="sub3.html">STARWARS</a></li>
-                <li><a href="sub4.html">EVENTS</a></li>
-            </ul>
-        </nav>
-        <footer class="ft">
-            <div class="ft_wrap">
-                <p></p>
+            </nav>
+            <footer class="ft">
+                <div class="ft_wrap">
+                    <p></p>
+                </div>
+            </footer>
+        </aside>
+        <main class="con">
+            <div class="con_box">
+                <div class="page_wrap">
+                    <ul class="second">
+                        <li class="marvel">
+                            <div class="typo">MARVEL</div>
+                        </li>
+                        <li class="mo">
+                            <h2>호크아이의 비극 </h2>
+                            <a href="">
+                                <img src="./img/sub2-1.png" href="#" alt="" class="second_logo">
+                                <p>
+                                    영화는 타이틀 없이 바로 호크아이의 비극을 보여주었습니다. 단란한 가족 시간을 보내는 호크아이에게 갑자기 눈 앞에서 가족이 사라진다는 것은, 극장에서 정말 “헉!” 소리 나게 만들 수준의 비극이었습니다. 이 장면은 호크아이에게 생길 변화를 너무나도 뛰어나게 관객들에게 설명해주는 명장면이었죠. 텅 빈 농장을 보여주는 데 집중한 화면 구성도 일품이었습니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="mo">
+                            <h2>아이언맨의 분노</h2>
+                            <a href=""><img src="./img/sub2-1-1.jpg" alt=""></a>
+                            <p>기력이 쇠한 상태에서 간신히 지구로 돌아온 아이언맨을 모두가 반깁니다. 하지만, 아이언맨은 곧 가슴 속에 묻어두었던 죄책감을 그만의 방식으로 터트리기 시작합니다. 앙상한 토니 스타크의 예민하고 히스테리컬한 모습을 보여주는 데 열연을 다한 연기 장인 로다주의 모습도 인상적이었고, 폭발하듯이 캡틴과 대사를 몰아붙이는 장면도 캡틴과 아이언맨의 감정선을 잘 다뤄주어서 좋았습니다. 게다가, 중간에 로켓 라쿤을 보면서 “인형인 줄 알았어.” 라고 관객들을 웃기는 대사도 있는, 여러 감정이 종합선물세트처럼 있는 명장면이었습니다. </p>
+                        </li>
+                        <li class="mo">
+                            <h2>블랙 위도우의 눈물</h2><a href=""><img src="./img/sub2-1-2.jpg" alt="">
+                                <p>5년 뒤를 묘사할 때, ‘마치 죄책감 때문에 이 일을 놓지 못하는’ 듯 한 어벤져스의 모습은 블랙 위도우를 통해서 잘 반영되었습니다. 특히, 흑화된 호크아이의 이야기를 듣고 울면서 샌드위치를 먹는 장면은 블랙 위도우라는 캐릭터와 배우 스칼렛 요한슨이 얼마나 하나가 되었는지 느낄 수 있었던, 감동 어린 장면이었습니다. 게다가 바로 캡틴이 나타나 ‘내 절망적인 요리를 선사해주려 했지.’ 라는 웃긴 대사에 애써 괜찮은 척 하는 블랙 위도우의 모습은 관객들의 가슴을 너무나 아프게 했죠. </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="tit_btn2">
+                    </ul>
+                    <ul class="third">
+
+                    </ul>
+                </div>
             </div>
-        </footer>
-    </aside>
-    <main class="con">
-      <div class="con_box">
-        <div class="page_wrap">
-        <ul class="second">
-            <li class="marvel">
-            <div class="typo">MARVEL</div>
-            </li>
-            <li class="mo">
-               <h2>호크아이의 비극 </h2>
-                <a href="">
-                <img src="./img/sub2-1.png" href="#"alt="" class="second_logo">
-                <p>
-                영화는 타이틀 없이 바로 호크아이의 비극을 보여주었습니다. 단란한 가족 시간을 보내는 호크아이에게 갑자기 눈 앞에서 가족이 사라진다는 것은, 극장에서 정말 “헉!” 소리 나게 만들 수준의 비극이었습니다. 이 장면은 호크아이에게 생길 변화를 너무나도 뛰어나게 관객들에게 설명해주는 명장면이었죠. 텅 빈 농장을 보여주는 데 집중한 화면 구성도 일품이었습니다.     
-                </p>
-                </a>
-            </li>
-            <li class="mo">
-              <h2>아이언맨의 분노</h2>
-              <a href=""><img src="./img/sub2-1-1.jpg" alt=""></a>
-              <p>기력이 쇠한 상태에서 간신히 지구로 돌아온 아이언맨을 모두가 반깁니다. 하지만, 아이언맨은 곧 가슴 속에 묻어두었던 죄책감을 그만의 방식으로 터트리기 시작합니다. 앙상한 토니 스타크의 예민하고 히스테리컬한 모습을 보여주는 데 열연을 다한 연기 장인 로다주의 모습도 인상적이었고, 폭발하듯이 캡틴과 대사를 몰아붙이는 장면도 캡틴과 아이언맨의 감정선을 잘 다뤄주어서 좋았습니다. 게다가, 중간에 로켓 라쿤을 보면서 “인형인 줄 알았어.” 라고 관객들을 웃기는 대사도 있는, 여러 감정이 종합선물세트처럼 있는 명장면이었습니다. </p>
-              </li>
-            <li class="mo">
-                <h2>블랙 위도우의 눈물</h2><a href=""><img src="./img/sub2-1-2.jpg" alt="">
-                <p>5년 뒤를 묘사할 때, ‘마치 죄책감 때문에 이 일을 놓지 못하는’ 듯 한 어벤져스의 모습은 블랙 위도우를 통해서 잘 반영되었습니다. 특히, 흑화된 호크아이의 이야기를 듣고 울면서 샌드위치를 먹는 장면은 블랙 위도우라는 캐릭터와 배우 스칼렛 요한슨이 얼마나 하나가 되었는지 느낄 수 있었던, 감동 어린 장면이었습니다. 게다가 바로 캡틴이 나타나 ‘내 절망적인 요리를 선사해주려 했지.’ 라는 웃긴 대사에 애써 괜찮은 척 하는 블랙 위도우의 모습은 관객들의 가슴을 너무나 아프게 했죠. </p>
-                </a>
-            </li>
-        </ul>
-        <ul class="tit_btn2">
-        </ul>
-        <ul class="third">
-           
-        </ul>
-        </div>
-        </div>
-    </main>
+        </main>
     </div>
 </body>
+
 </html>
