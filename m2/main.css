@@ -1,4 +1,4 @@
- @charset utf-8;
+ @charset "utf-8";
 * { margin:0; padding:0; }
     body, html { font-family: 'Gothic A1', sans-serif; width:100%; height:100%; overflow-x:hidden; background-image: url(img/blue_back.png); background-size: cover;  background-position: center;}
     body{overflow:auto;}
