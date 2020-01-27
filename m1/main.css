@@ -34,3 +34,7 @@
     .lc{margin-top: 30px;}
     .lc input {margin: 20px; width: 80px; height: 40px; background: darkblue; color:white;}
     .xi-close-circle-o {font-size: 30px; position: absolute; top: 10px; right: 5px; color:darkblue;}
+/*footer*/
+    .ft{ width: 100%; background:#003399; position: relative; max-width: 100%; height:auto;}
+/*    .ft_wrap{width: 100vw;height: 100px; background: black; }*/
+    .ft p{text-align: center; color:white;line-height: 30px; font-size: 14px; padding: 20px 0px;}
