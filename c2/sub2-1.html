@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Cormorant+Infant&display=swap" rel="stylesheet">
+    <script src="jquery-1.11.1.js"></script>
+    <script src="main.js"></script>
+    <style>
+        /*        main1*/
+        .vs img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .text_box {
+            width: 50vw;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .text_box h2,
+        .text_box2 h2 {
+            font-size: 30px;
+            color: black;
+            margin: 20px auto;
+        }
+
+        .text_box p,
+        .text_box2 p,
+        .text p {
+            font-size: 22px;
+            line-height: 40px;
+            height: auto;
+        }
+
+        .bread {
+            margin: 30px auto;
+        }
+
+        .bread a,
+        p {
+            color: black;
+            float: left;
+            font-size: 24px;
+        }
+
+        /*        main2*/
+        .main2 img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .main2 .cal,
+        .text .cal {
+            text-align: center;
+            color: crimson;
+        }
+
+        .img_box2 li,
+        .text_box2 li {
+            padding: 50px 0px;
+        }
+
+        .img_box2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        .text_box2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+
+        @media screen and (min-width:767px) and (max-width:1279px) {
+            .hd {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .logo_box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 50px auto;
+            }
+
+            .gnb {
+                margin: 40px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .gnb li {
+                font-size: 34px;
+                line-height: 70px;
+            }
+
+              .main2 {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                flex-wrap: wrap;
+                font-size: 30px;
+                width: 90%; margin: 0 auto;
+            }
+        }
+
+            
+
+        /*      데스크탑*/
+        @media screen and (min-width:1280px) {
+            .wrap {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .hd {
+                position: relative;
+                margin: 30px auto;
+            }
+
+            .logo_box {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin: 0px auto;
+            }
+
+            .gnb {
+                float: right;
+                margin: 0px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .gnb li {
+                width: 100px;
+                float: left;
+                text-align: center;
+                font-size: 24px;
+                color: black;
+            }
+
+            /*         slide*/
+            .main_tit_box {
+                left: 40%;
+                top: 20%;
+            }
+
+            .vs {
+                width: 1280px;
+                position: relative;
+                margin: 0 auto;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .main2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 80%;
+                margin: 50px auto;
+                background-color: ;
+                padding: 0px;
+
+            }
+
+            .img_box2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 50%;
+            }
+
+            .text_box2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 50%;
+            }
+
+            .text_box2 li {
+                padding: 50px 0px;
+            }
+
+            .img_box2 li,
+            .text_box2 li {
+                margin: 50px auto;
+            }
+
+            /*
+
+            .text_box2 {
+                line-height: 50px;
+                width: 40%;
+                text-align: center;
+            }
+*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="logo_box">
+                <a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+            </div>
+          <nav class="gnb">
+                <ul class="li_box">
+                    <li class="item1"><a href="sub1.html" class="dp1">about</a>
+                    </li>
+                    <li class="item item2"><a class="dp1">menu</a>
+                        <ul class="sub sub1">
+                            <li><a href="sub2.html" class="menu_sub">smoothies</a></li>
+                            <li><a href="sub2-1.html" class="menu_sub">bowls</a></li>
+                        </ul>
+                    </li>
+                    <li class="item item3"><a class="dp1">notice</a>
+                        <ul class="sub sub2">
+                            <li><a href="sub3.html" class="menu_sub">event</a></li>
+                            <li><a href="sub3-1.html" class="menu_sub">news</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4"><a href="sub4.html" class="dp1">location</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main2">
+            <ul class="img_box2">
+                <li>
+                    <img src="./img/sub3-1.png" alt="">
+                </li>
+                <li class="text">
+                    <h2>acai primo</h2>
+                    <p class="cal">510 cal
+                    </p>
+                    <p>ingredients<br>
+                        Strawberries, Acai Blend, Blueberries, Soymilk, Bananas //Toppings: Bananas, Strawberries, Organic Granola, Blueberries, Honey, Shredded Coconut
+
+                        order nowexternal link</p>
+                </li>
+                <li>
+                    <img src="./img/sub3-3.png" alt=""></li>
+            </ul>
+            <ul class="text_box2">
+                <li>
+                    <h2>vanilla blue sky</h2>
+                    <p class="cal">330 cal </p>
+                    <p>
+                        ingredients<br>
+                        Bananas, Pineapples, Unsweetened Almondmilk, Vanilla Coconutmilk, Blue Spirulina // Toppings: Organic Granola, Strawberries, Blueberries, Coconut Chips, Goji Berries, Sliced Almonds</p>
+                </li>
+                <li>
+                    <img src="./img/sub3-2.png" alt="">
+                </li>
+                <li>
+                    <h2>chunky strawberry</h2>
+                    <p class="cal">580 cal</p>
+                    <p>ingredients
+                        Strawberries, Soymilk, Bananas, Nonfat Greek Yogurt,Organic Granola, Peanut Butter // Toppings: Bananas, Organic Granola, Strawberries</p>
+                </li>
+            </ul>
+        </main>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <ul class="bottom_link">
+                    <li><a href="">international</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href=""><img src="./img/facebook.png" alt=""></a></li>
+                    <li><a href="./img/youtube.png"><img src="./img/youtube.png" alt=""></a></li>
+                    <li><a href="./img/twitter.png"><img src="./img/twitter.png" alt=""></a></li>
+                </ul>
+                <!--
+                <div class="copy">
+                    <p>Copyright 2019 © Jamba Juice Franchisor SPV LLC. All rights reserved.</p>
+                </div>
+-->
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

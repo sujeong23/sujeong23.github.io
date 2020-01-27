@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    width: 95vw;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Acme', sans-serif;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main1 .tit_box,
+.main2 .tit_box {
+    font-family: 'Cormorant Infant', serif;
+}
+
+@media screen and (min-width:1280px) {
+    .hd {
+        height: 150px;
+        position: relative;
+        margin: 30px auto;
+    }
+    .sub{position: absolute;}
+}
+
+.gnb li {
+    line-height: 30px;
+}
+
+.gnb li a {
+    color: black;
+}
+
+
+.gnb li a.dp1:hover {
+    color: #ff6666;
+}
+
+/*        .gnb li.item2 a:hover {color:black; background:#ff6666;}*/
+.sub {
+    width: 100px;
+    height: auto;
+    display: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.sub li {
+    line-height: 50px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+.item:hover .menu_sub {
+    color: black;
+}
+
+.item:hover .sub {
+    display: block;
+    background: #ff6666;
+}
+*/
+
+.main1 {}
+
+.main_tit_box {
+    position: absolute;
+}
+
+.vs li img {
+    padding-left: 300px;
+}
+
+
+
+.main2 .img_box {
+    margin: 20px auto;
+    height: auto
+}
+
+.main2 .img_box li {
+    float: left;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.main2 h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.main2 .tit_box {}
+
+.main2 .tit_box p {
+    float: left;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*main2 hover효과*/
+/*.main2 li:hover{background: rgba(0,0,0,0.2);}*/
+
+
+/*main3*/
+
+.main3 h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.img_box2 li {}
+
+.tit_box {
+    float: left;
+}
+
+.tit_box h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.tit_box p {
+    text-align: center;
+}
+
+/*footer*/
+.ft {
+    height: auto;
+}
+
+.ft_wrap {
+    margin-top: 100px;
+    border-top: 1px solid black;
+}
+
+.bottom_link {
+
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: 30px auto;
+}
+
+.bottom_link li {}
+
+.bottom_link li a {
+    color: black;
+    font-weight: bold;
+}
+
+.sns {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 15%;
+    margin: 30px auto;
+}
+
+.copy {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.copy p {
+    text-align: center;
+}
+
+.lj_box {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.lj_box li {
+    text-align: center;
+}
+
+.lj_box a {
+    font-weight: bold;
+    color: black;
+}

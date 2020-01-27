@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Cormorant+Infant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+    <script src="jquery-1.11.1.js"></script>
+    <script src="main.js"></script>
+    <style>
+        .vs p {
+            margin: 50px auto;
+            text-align: center;
+            padding: 30px 0 30px 0;
+            font-size: 80px;
+            font-weight: bold;
+            color: lemonchiffon;
+            text-shadow: 5px 5px 5px black;
+        }
+
+        /*main2*/
+        .main2 {
+            height: auto;
+            font-weight: bold;
+            background: rgba(255, 204, 51, 0.1);
+        }
+
+        .main2 li img:hover {
+            transform: rotate(30deg);
+            transition: 0.4s;
+        }
+
+        /*main3 hover 효과*/
+        .img_box2 li:hover {
+            background: rgba()
+        }
+
+        .img_box2 li img:hover {
+            transform: scale(1.5);
+            transition: 0.4s;
+        }
+
+        /*main3*/
+        .main3 {
+            background-color: #ffcc33;
+        }
+
+        @media screen and (min-width:767px) and (max-width:1279px) {
+            .hd {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .logo_box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 50px auto;
+            }
+
+            .gnb {
+                margin: 40px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .gnb li {
+                font-size: 34px;
+                line-height: 70px;
+            }
+
+            /*            slide*/
+            .vs {
+                width: 967px;
+                position: relative;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            .slide_box {
+                width: 3868px;
+                height: auto;
+            }
+
+            .vs li {
+                width: 967px;
+                float: left;
+            }
+
+            .vs img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .main_tit_box {
+                left: 30%;
+                top: 20%;
+            }
+
+            .vs p {
+                margin: 0 auto;
+            }
+
+            /*            */
+            .main2 {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+
+            .img_box,
+            .tit_box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            .main3 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 50px 0px;
+            }
+
+            .img_box2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .img_box2 img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .tit_box2_wrap {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                text-align: center;
+            }
+        }
+
+        /*      데스크탑*/
+        @media screen and (min-width:1280px) {
+            .wrap {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .logo_box {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin: 0px auto;
+            }
+
+            .gnb {
+                float: right;
+                margin: 0px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .gnb li {
+                width: 100px;
+                float: left;
+                text-align: center;
+                font-size: 24px;
+                color: black;
+            }
+
+            /*         slide*/
+            .main_tit_box {
+                left: 40%;
+                top: 20%;
+            }
+
+            .vs {
+                width: 1280px;
+                position: relative;
+                margin: 0 auto;
+                height: 590px;
+                overflow: hidden;
+            }
+
+            .slide_box {
+                width: 4000px;
+                overflow: hidden;
+            }
+
+            .vs li {
+                width: 1280px;
+                margin: 0 auto;
+                float: left;
+            }
+
+            /*            */
+            .main2 {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+
+            .img_box,
+            .tit_box {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .img_box {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .tit_box {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .tit_box p {
+                width: 20%;
+            }
+
+            .main3 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 40px 0px;
+            }
+
+            .main3_tit_box {
+                direction: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin: 40px auto;
+            }
+
+            .tit_box2_wrap {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin: 10px auto;
+            }
+
+            .img_box2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                text-align: center;
+            }
+
+            /*            .img_box2 li h2, p{display: none;}*/
+            .img_box2 li {
+                margin: 0 auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="logo_box">
+                <a href="" class="logo"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <nav class="gnb">
+                <ul class="li_box">
+                    <li class="item1"><a href="sub1.html" class="dp1">about</a>
+                    </li>
+                    <li class="item item2"><a class="dp1">menu</a>
+                        <ul class="sub sub1">
+                            <li><a href="sub2.html" class="menu_sub">smoothies</a></li>
+                            <li><a href="sub2-1.html" class="menu_sub">bowls</a></li>
+                        </ul>
+                    </li>
+                    <li class="item item3"><a class="dp1">notice</a>
+                        <ul class="sub sub2">
+                            <li><a href="sub3.html" class="menu_sub">event</a></li>
+                            <li><a href="sub3-1.html" class="menu_sub">news</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4"><a href="sub4.html" class="dp1">location</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main1">
+            <figure class="vs">
+                <div class="main_tit_box">
+                    <p>REFRESH<br>
+                        and<br>refuel</p>
+                </div>
+                <ul class="slide_box">
+                    <li class="img_slide"><img src="./img/mainimage1_vanillablue.png" alt=""></li>
+                    <li class="img_slide"><img src="./img/mainimage2_matchalemon.png" alt=""></li>
+                    <li class="img_slide"><img src="./img/mainimage3_mango.png" alt=""></li>
+                    <li class="img_slide"><img src="./img/mainimage4_islandpitaya.png" alt=""></li>
+                </ul>
+            </figure>
+        </main>
+        <main class="main2">
+            <h2>step into our whirl'd</h2>
+            <ul class="img_box">
+                <li><img src="./img/main2image1.png" alt=""></li>
+                <li><img src="./img/main2image2.png" alt=""></li>
+                <li><img src="./img/main2image3.png" alt=""></li>
+            </ul>
+            <ul class="tit_box">
+                <p> real, balanced ingredients<br>that taste great</p>
+                <p>make it yours<br>with whole food boosts</p>
+                <p>fresh-squeezed juices</p>
+            </ul>
+        </main>
+        <main class="main3">
+            <div class="main3_tit">
+                <h2>Best menu</h2>
+            </div>
+            <ul class="img_box2">
+                <li><img src="./img/mainpage3-1s.png" alt="">
+                    <h2>greens'n ginger</h2>
+                    <p>Lemonade, Peaches, Kale,<br>
+                        Mangos, Ginger</p>
+                </li>
+                <li><img src="./img/mainpage3-2 s.png" alt="">
+                    <h2>pomegranate paradise</h2>
+                    <p>Pomegranate Juice Blend, Mangos,<br>
+                        Strawberries, Peaches</p>
+                </li>
+                <li><img src="./img/mainpage3-3 s.png" alt="">
+                    <h2>greens'n ginger</h2>
+                    <p>Pomegranate Juice Blend, Mangos,<br>
+                        Strawberries, Peaches</p>
+                </li>
+            </ul>
+        </main>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <ul class="bottom_link">
+                    <li><a href="">international</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href=""><img src="./img/facebook.png" alt=""></a></li>
+                    <li><a href="./img/youtube.png"><img src="./img/youtube.png" alt=""></a></li>
+                    <li><a href="./img/twitter.png"><img src="./img/twitter.png" alt=""></a></li>
+                </ul>
+                <div class="copy">
+                    <p>Copyright 2019 © Jamba Juice Franchisor SPV LLC. All rights reserved.</p>
+                </div>
+                <div class="logo"><a href=""></a></div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

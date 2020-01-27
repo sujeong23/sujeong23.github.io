@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Cormorant+Infant&display=swap" rel="stylesheet">
+    <script src="jquery-1.11.1.js"></script>
+    <script src="main.js"></script>
+    <style>
+        .tb {
+            font-family: 'Gothic A1', sans-serif;
+            display: table;
+            width: 60vw;
+            margin: 130px auto;
+            font-size: 22px;
+            text-align: center;
+            white-space: normal;
+        }
+
+        .tb tr {
+            line-height: 80px;
+        }
+
+        .tb thead {
+            background: crimson;
+            color: white;
+        }
+
+        .tb td {
+            border-bottom: 1px solid gray;
+            ;
+        }
+
+        /*        main1*/
+        .bread {
+            margin: 30px auto;
+        }
+
+        .bread a,
+        p {
+            color: black;
+            float: left;
+            font-size: 24px;
+        }
+
+        /*        main2*/
+        .main2 img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .img_box2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .img_box2 p {
+            text-align: center;
+            line-height: 40px;
+            width: 100%;
+            margin: 50px auto;
+        }
+
+        /*        모바일*/
+        @media screen and (min-width:767px) and (max-width:1279px) {
+            .hd {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .logo_box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 50px auto;
+            }
+
+            .gnb {
+                margin: 40px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .gnb li {
+                font-size: 34px;
+                line-height: 70px;
+            }
+
+            .main2 {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+
+            .img_box,
+            .tit_box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            .main3 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 50px 0px;
+            }
+
+            .img_box2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .img_box2 img {
+                display: block;
+                margin: 0 auto;
+            }
+
+        }
+
+        /*      데스크탑*/
+        @media screen and (min-width:1280px) {
+            .wrap {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .hd {
+                position: relative;
+                margin: 30px auto;
+            }
+
+            .logo_box {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin: 0px auto;
+            }
+
+            .gnb {
+                float: right;
+                margin: 0px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .gnb li {
+                width: 100px;
+                float: left;
+                text-align: center;
+                font-size: 24px;
+                color: black;
+            }
+
+            /*         slide*/
+            .main_tit_box {
+                left: 40%;
+                top: 20%;
+            }
+
+            .vs {
+                width: 1280px;
+                position: relative;
+                margin: 0 auto;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .main2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 90%;
+                margin: 50px auto;
+                background-color: ;
+
+            }
+
+            .img_box2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .img_box2 li {
+                padding: 50px auto;
+            }
+
+            /*
+
+            .text_box2 {
+                line-height: 50px;
+                width: 40%;
+                text-align: center;
+            }
+*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="logo_box">
+                <a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+            </div>
+           <nav class="gnb">
+                <ul class="li_box">
+                    <li class="item1"><a href="sub1.html" class="dp1">about</a>
+                    </li>
+                    <li class="item item2"><a class="dp1">menu</a>
+                        <ul class="sub sub1">
+                            <li><a href="sub2.html" class="menu_sub">smoothies</a></li>
+                            <li><a href="sub2-1.html" class="menu_sub">bowls</a></li>
+                        </ul>
+                    </li>
+                    <li class="item item3"><a class="dp1">notice</a>
+                        <ul class="sub sub2">
+                            <li><a href="sub3.html" class="menu_sub">event</a></li>
+                            <li><a href="sub3-1.html" class="menu_sub">news</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4"><a href="sub4.html" class="dp1">location</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main2">
+            <table class="tb">
+                <thead>
+                    <tr>
+                        <td>NO</td>
+                        <td>Subject</td>
+                        <td>Date</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="">잠바주스 강남점
+                                행사 안내</a></td>
+                        <td>2020-01-03</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="">직원채용안내</a></td>
+                        <td>2019-12-30</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>개인정보 정책 변경안내</td>
+                        <td>2019-12-24</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>10월 특별 할인 메뉴</td>
+                        <td>2019-10-02</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>지점 추가 안내</td>
+                        <td>2019-08-30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <ul class="bottom_link">
+                    <li><a href="">international</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href=""><img src="./img/facebook.png" alt=""></a></li>
+                    <li><a href="./img/youtube.png"><img src="./img/youtube.png" alt=""></a></li>
+                    <li><a href="./img/twitter.png"><img src="./img/twitter.png" alt=""></a></li>
+                </ul>
+                <!--
+                <div class="copy">
+                    <p>Copyright 2019 © Jamba Juice Franchisor SPV LLC. All rights reserved.</p>
+                </div>
+-->
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
