@@ -9,14 +9,6 @@
         nextAni();
     }, 2900);
         $(".m2").click(function(){
-            $(".sub2").slideToggle(500).css("background","rgba(255,255,255,0.4)");
-        });
-//        $(".sub2 li").click(function(){
-//            $(".sub2 li a").css("color", "black"); 
-//        });
-//        $(".gnb li.m").click(function(){
-//            $(".gnb li a.ma").css({"color":"black"}); 
-//        });
-       
-        
+            $(".sub2").slideToggle(500).css({"background":"rgba(153, 168, 252, 0.3)"});
+        })  
     });
