@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery/jquery.js"></script>
+    <title>아주대병원</title>
+</head>
+<style>
+.con{width: 100%; margin:70px auto;}
+.con img{display: block; width: 100%; height: auto;}
+/*        main*/
+        .box{display: flex; flex-direction: row; justify-content:center; }
+        .p_box{width: 43%; line-height: 30px; text-align: center;background: white; }
+        .box p{width: 80%; margin: 0 auto;}
+        .box1 .p_box{padding-top: 90px; }
+        .box2 .p_box{padding-top: 10px;}
+        .box3 .p_box{padding-top: 70px; padding-bottom: 50px;}
+        .box3 button{margin: 40px auto; background: lightgray; width: 100px; height: 40px; border: 0; }
+            
+    
+</style>
+<script>
+    $(".p_box").click(function(){
+        $(".box").css({});
+    });
+</script>
+<body>
+    <div class="wrap">
+       <div class="wrap2">
+        <header class="hd">
+           <div class="logo">
+               <a href="index.html"><img src="./images/logo.png" alt=""></a>
+           </div>
+            <nav class="gnb">
+                <ul>
+                    <li class="item1"><a href="index.html" class="dp1">Home</a></li>
+                    <li class="item2"><a class="dp1">의료진소개</a>
+                        <ul class="sub">
+                            <li><a href="sub1.html"  class="sa">가정의학과</a></li>
+                            <li><a href="sub1-1.html"  class="sa">감염내과</a></li>
+                        </ul>
+                    </li>
+                    <li class="item3"><a class="dp1">진료안내</a>
+                        <ul class="sub">
+                            <li><a href="sub2.html" class="sa">진료절차</a></li>
+                            <li><a href="sub2-1.html" class="sa">응급진료</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4"><a class="dp1">병원소개</a>
+                    <ul class="sub">
+                        <li><a href="sub3.html" class="sa">인사말</a></li>
+                        <li><a href="sub3-1.html" class="sa">병원소식</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="con">
+            <ul class="box box1">
+                <li class="img_box"><img src="./images/img1.png" alt="">
+                </li>
+                <li class="p_box">
+                <h2>우리의 약속(Mission) : </h2>
+                <p>우리는 항상 당신 곁에 있으며,<br> 당신의 아픔을 치유하기 위하여 끊임없이 헌신합니다.<br>
+                </p>
+                </li>
+            </ul>
+            <ul class="box box2">
+                <li class="p_box">
+                   <h2>최고의 의료진</h2>
+                    <p>아주대학교의료원에는 의학과 간호학의 우수한 인재를<br> 양성하는 아주대학교 의과대학·의학전문대학원과<br> 아주대학교 간호대학, 끊임없는 헌신과 도전으로 국내외 명성을 쌓아가고 있는 아주대학교병원, 연구를 통해 진정한 의학발전을 선도하고 있는 첨단의학연구원이 있습니다.<br><br>
+                    + 응급의료센터<br>
+                    + 외상센터<br>
+                    + 웰빙센터</p>
+                </li>
+                <li class="img_box"><img src="./images/img2.png" alt=""></li>
+            </ul>
+            <ul class="box box3">
+                <li class="img_box"><img src="./images/img3.png" alt=""></li>
+                <li class="p_box">
+                    <p>아주대학교병원은 풍부한 임상경험을 겸비한 의료진과 최첨단 인프라를 바탕으로 ‘가장 안전하고 친절한 환자중심병원’으로 거듭나고자 최선의 노력을 하고 있습니다.
+           우리는 의료 사각지대에 놓인 저소득층 환자와 외국인 노동자의 진료비를 지원하고 점차 사회 공헌활동의 영역과 범위를 확대해 나갈 예정입니다.</p>
+                <button type="button" class="btn dark-blue-bordered-btn normal-btn">오시는길</button>
+               <button type="button" class="btn yellow-btn normal-btn">층별 안내</button>
+               <button type="button" class="btn green-btn normal-btn">진료시간표</button>    
+                </li>
+            </ul>
+        </main>
+        <footer class="ft">
+            <p>경기도 수원시 영통구 원천동 월드컵로 164<br>
+                연락처: 1688-6114</p>
+            <ul class="link">
+                <li><a href="http://hosp.ajoumc.or.kr/indexHEXC.aspx">건강증진센터</a></li>
+                <li><a href="https://ts.ajoumc.or.kr/Main/MainType11.aspx?cp=1&sid=&rc=10&ssc=0006&ssgc=DM&CCP=1">장례식장</a></li>
+                <li><a href="https://ts.ajoumc.or.kr/Main/MainType02.aspx?cp=1&sid=&rc=10&ssc=0002&ssgc=DM&CCP=1">진료협력센터</a></li>
+                <li><a href="https://ts.ajoumc.or.kr/Main/MainType02.aspx?cp=1&sid=&rc=10&ssc=0004&ssgc=DM&CCP=1">의료원 발전기금</a></li>
+            </ul>
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

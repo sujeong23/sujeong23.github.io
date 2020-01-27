@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery/jquery.js"></script>
+    <title>아주대병원</title>
+    <style>
+        .con{width: 80%; height:auto; margin: 0 auto;}
+        .wrap{width: 100%; height: auto; margin: 0 auto;}
+        .lst { width: 90%; margin:0 auto; margin-top:3%; 
+        display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; background: rgba(255,255,255,0.2); }
+        .lst:after {content: ""; clear: both; display: table;}
+        .lst li {float:left; margin-top: 10%; overflow: hidden; position: relative;}
+        .lst span{display: block; position: absolute; width: 100%; height: 100%; top: 0%; left: 0%; text-align: center; background: rgba(0,0,0,0.7); color: white; padding: 50% 0px; font-size: 18px; transition: 0s;}
+/*        ani*/
+        .lst span:hover {opacity: 0; transition: 0.6s;}
+        .lst li a img{display:block; opacity:0; transition:0.4s; margin: 0 auto; width: 240px; height: 300px;}
+        .lst.on li a img{ margin-top: 0px; opacity:1; }
+        .lst li:nth-child(1) a img{ transition-delay:0.1s; }
+        .lst li:nth-child(2) a img{ transition-delay:0.2s; }
+        .lst li:nth-child(3) a img{ transition-delay:0.3s; }
+        .lst li:nth-child(4) a img{ transition-delay:0.4s; }
+        .lst li:nth-child(5) a img{ transition-delay:0.6s; }
+        .lst li:nth-child(6) a img{ transition-delay:0.7s; }
+        .lst li:nth-child(7) a img{ transition-delay:0.8s; }
+        .lst li:nth-child(8) a img{ transition-delay:0.9s; }   
+
+
+    </style>
+    <script>
+    $(document).ready(function(){
+        var p = $(".wrap");
+        p.mouseover(function(){
+            $(this).find(".lst").addClass("on");
+        });
+    });    
+    </script>
+</head>
+<body>
+    <div class="wrap">
+       <header class="hd">
+           <div class="logo">
+               <a href="index.html"><img src="./images/logo.png" alt=""></a>
+           </div>
+              <nav class="gnb">
+                <ul>
+                    <li class="item1"><a href="index.html" class="dp1">Home</a></li>
+                    <li class="item2"><a class="dp1">의료진소개</a>
+                        <ul class="sub">
+                            <li><a href="sub1.html"  class="sa">가정의학과</a></li>
+                            <li><a href="sub1-1.html"  class="sa">감염내과</a></li>
+                        </ul>
+                    </li>
+                    <li class="item3"><a class="dp1">진료안내</a>
+                        <ul class="sub">
+                            <li><a href="sub2.html" class="sa">진료절차</a></li>
+                            <li><a href="sub2-1.html" class="sa">응급진료</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4"><a class="dp1">병원소개</a>
+                    <ul class="sub">
+                        <li><a href="sub3.html" class="sa">인사말</a></li>
+                        <li><a href="sub3-1.html" class="sa">병원소식</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="con">
+          <ul class="lst">
+              <li><a href=""><img src="./images/sub4.png" alt=""></a>
+              <span>아주대학교의료원<br>신년하례식</span></li>
+              <li><a href=""><img src="./images/sub4-1.jpg" alt=""></a>
+              <span>소아암 환아 모임 ‘온누리회’</span></li>
+              <li><a href=""><img src="./images/sub4-2.jpg" alt=""></a>
+              <span>‘2020학년도 감염관리의 날’<br>행사 개최</span></li>
+              <li><a href=""><img src="./images/sub4-3.jpg" alt=""></a>
+              <span>암 정밀의료 솔루션<br> 구축을 위한 MOU 체결</span></li>
+        </ul>
+        <ul class="lst">
+              <li><a href=""><img src="./images/sub4-4.jpg" alt=""></a>
+              <span>아주대학교의료원<br>신년하례식</span></li>
+              <li><a href=""><img src="./images/sub4-5.jpg" alt=""></a>
+              <span>소아암 환아 모임 ‘온누리회’</span></li>
+              <li><a href=""><img src="./images/sub4-6.jpg" alt=""></a>
+              <span>‘2020학년도 감염관리의 날’<br>행사 개최</span></li>
+              <li><a href=""><img src="./images/sub4-7.jpg" alt=""></a>
+              <span>암 정밀의료 솔루션<br> 구축을 위한 MOU 체결</span></li>
+        </ul>
+         
+<!--
+        <ul class="lst_tit">
+              <li><a href=""> 아주대학교의료원 신년하례식
+              </a></li>
+              <li><a href="">소아암 환아 모임 ‘온누리회’</a></li>
+              <li><a href=""> ‘2020학년도 감염관리의 날’<br>행사 개최</a></li>
+              <li><a href=""> 암 정밀의료 솔루션<br> 구축을 위한 MOU 체결</a></li>
+          </ul>
+-->
+        </main>
+        <footer class="ft">
+            <p>경기도 수원시 영통구 원천동 월드컵로 164<br>
+                연락처: 1688-6114</p>
+            <ul class="link">
+                <li><a href="http://hosp.ajoumc.or.kr/indexHEXC.aspx">건강증진센터</a></li>
+                <li><a href="https://ts.ajoumc.or.kr/Main/MainType11.aspx?cp=1&sid=&rc=10&ssc=0006&ssgc=DM&CCP=1">장례식장</a></li>
+                <li><a href="https://ts.ajoumc.or.kr/Main/MainType02.aspx?cp=1&sid=&rc=10&ssc=0002&ssgc=DM&CCP=1">진료협력센터</a></li>
+                <li><a href="https://ts.ajoumc.or.kr/Main/MainType02.aspx?cp=1&sid=&rc=10&ssc=0004&ssgc=DM&CCP=1">의료원 발전기금</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
