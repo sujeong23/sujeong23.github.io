@@ -9,15 +9,13 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
     <script src="main.js"></script>
-    <title>입학</title>
+    <title>대학</title>
     <style>
-        .wrap{width: 100%; margin: 0 auto; background-color: aliceblue;}
+        .wrap{width: 100%; margin: 0 auto; background-color: white;}
         .con{height: 100vh;}
         .first {width: 100%;height: auto;}
-        .item h2{padding: 10px;}
-        .item p{line-height: 24px;padding: 10px;}
-   
-        
+        .item h2{line-height: 80px;}
+        .item p{line-height: 24px;padding: 15px 0px;}
         @media screen and (max-width:767px){
         .item img{display: block; width: 100%; height: auto; }
         .tit_wrap{height: 150px;}
@@ -36,9 +34,11 @@
         
         @media screen and (min-width:1024px){
         .first{width: 100%; height: auto; }
-        .first_box{column-count:2; column-gap: 100px; text-align: center;}
+        .first_box{column-count:2; column-gap: 70px; }
+        .first_box h2{text-align: center; margin: 30px auto;}
         .first_box li{float:left; height: auto; margin-top: 60px;}
-        .first_box img{display:block; width: 200px; height: 200px; margin: 0 auto;}
+        .first_box li p{width: 50%; margin: 0 auto;}
+        .first_box img{display:block; width: 300px; height: 300px; margin: 0 auto;}
         }
     </style>
 </head>
@@ -49,12 +49,12 @@
         <nav class="gnb">    
             <div class="tap"><i class="xi-bars"></i></div>
             <div class="menu">
-                <ul class="menu_box">
+               <ul class="menu_box">
                     <li class="sub_m sub_m1"><a>대학소개</a>
-                    <ul class="sub sub1-1">
+                        <ul class="sub sub1-1">
                             <li><a href="sub1.html">이념 및 역사</a></li>
                              <li><a href="sub1-1.html">대학 상징</a></li>
-                    </ul>
+                        </ul>
                     </li>
                     <li class="sub_m sub_m2"><a>입학</a>
                          <ul class="sub sub2-1">
@@ -64,11 +64,13 @@
                     <li class="sub_m sub_m3"><a>교육</a>
                          <ul class="sub sub3-1">
                             <li><a href="sub3.html">대학</a></li>
-                        </ul></li>
+                        </ul>
+                    </li>
                     <li class="sub_m sub_m4"><a>연구산학</a>
                          <ul class="sub sub4-1">
                             <li><a href="sub4.html">산업기술혁신지원단</a></li>
-                        </ul></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="login_tap"><i class="xi-profile-o"></i></div>
