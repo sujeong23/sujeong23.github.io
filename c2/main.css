@@ -26,11 +26,46 @@ a {
     font-family: 'Acme', sans-serif;
 }
 
-.logo {
+.logo img {
     display: block;
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+.bread {
+    width: 74%;
+    margin: 30px auto;
+}
+
+.bread a{
+    color: black;
+    text-align: left;
+    font-size: 15px;
+}
+
+@media screen and (min-width:767px) and (max-width:1279px) {
+    .logo_box {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 40px auto;
+    }
+
+    .gnb {
+        margin: 80px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .gnb li {
+        font-size: 34px;
+        line-height: 70px;
+    }
+
 }
 
 .main1 .tit_box,
@@ -44,12 +79,36 @@ a {
         position: relative;
         margin: 30px auto;
     }
-    .sub{position: absolute;}
+
+    .logo_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 200px;
+        height: 100px;
+        float: left;
+    }
+
+    .gnb {
+        float: right;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sub {
+        position: absolute;
+    }
+    .bread a{font-size: 18px;}
 }
+
+/*
 
 .gnb li {
     line-height: 30px;
 }
+*/
 
 .gnb li a {
     color: black;
@@ -59,7 +118,7 @@ a {
 .gnb li a.dp1:hover {
     color: #ff6666;
 }
-
+.bread a:hover {color: #ff6666;}
 /*        .gnb li.item2 a:hover {color:black; background:#ff6666;}*/
 .sub {
     width: 100px;

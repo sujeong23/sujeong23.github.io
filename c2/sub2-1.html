@@ -39,16 +39,20 @@
             height: auto;
         }
 
+
+/*
         .bread {
+            width: 80%;
             margin: 30px auto;
+            text-align: left;
         }
 
-        .bread a,
-        p {
+        .bread a {
             color: black;
             float: left;
-            font-size: 24px;
+            font-size: 15px;
         }
+*/
 
         /*        main2*/
         .main2 img {
@@ -110,17 +114,18 @@
                 line-height: 70px;
             }
 
-              .main2 {
+            .main2 {
                 display: flex;
                 justify-content: space-around;
                 flex-direction: row;
                 flex-wrap: wrap;
                 font-size: 30px;
-                width: 90%; margin: 0 auto;
+                width: 90%;
+                margin: 0 auto;
             }
         }
 
-            
+
 
         /*      데스크탑*/
         @media screen and (min-width:1280px) {
@@ -217,14 +222,13 @@
 
     </style>
 </head>
-
 <body>
     <div class="wrap">
         <header class="hd">
             <div class="logo_box">
                 <a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
             </div>
-          <nav class="gnb">
+            <nav class="gnb">
                 <ul class="li_box">
                     <li class="item1"><a href="sub1.html" class="dp1">about</a>
                     </li>
@@ -244,6 +248,13 @@
                 </ul>
             </nav>
         </header>
+        <div class="bread">
+            <a href="index.html">home</a>
+            <a>></a>
+            <a href="sub2.html">menu</a>
+            <a>></a>
+            <a href="sub2-1.html">bowls</a>
+        </div>
         <main class="main2">
             <ul class="img_box2">
                 <li>
