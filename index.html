@@ -168,13 +168,17 @@
     }
 
     /* page1 */
+    #page1 {
+        background-color: floralwhite;
+    }
+
     .main_tit_box {
-        width: 60%;
+        width: 50%;
         margin: 0 auto;
         background: rgba(0, 0, 0, 0.9);
         position: absolute;
         top: 30%;
-        left: 20%;
+        left: 26%;
         border: 1px solid white;
     }
 
@@ -182,18 +186,18 @@
         font-family: 'Bangers', cursive;
         font-size: 90px;
         height: 100px;
-        line-height: 100px;
+        line-height: 150px;
         text-align: center;
         color: white;
         letter-spacing: 2px;
-        margin-top: 100px;
+        margin: 30px auto;
     }
 
     .main_tit_box h2 {
         text-align: center;
         color: white;
         font-size: 40px;
-        line-height: 200px;
+        line-height: 150px;
     }
 
     /* page2 */
@@ -254,7 +258,7 @@
         margin: 0 auto;
         position: absolute;
         z-index: 99;
-        bottom: 480px;
+        bottom: 40%;
     }
 
     .pro_btn button {
@@ -288,14 +292,52 @@
 
 
     /* page3 */
+    /*    animation*/
+    .w_box_wrap.on {
+        opacity: 1;
+    }
+
+    .w_box1 {
+        transition-delay: 0.1s;
+    }
+
+    .w_box2 {
+        transition-delay: 0.1s;
+    }
+
+    .w_box3 {
+        transition-delay: 0.1s;
+    }
+
+    .w_box4 {
+        transition-delay: 0.1s;
+    }
+
+    .w_box5 {
+        transition: 0.5s;
+    }
+
+    .w_box6 {
+        transition: 0.6s;
+    }
+
+    .w_box7 {
+        transition: 0.7s;
+    }
+
+    .w_box8 {
+        transition: 0.8s;
+    }
+
+    /*      */
     #page {
         background: white;
     }
 
     #page3 .text_box {
-        background: rgba(255, 255, 255, 0.1);
+        background: transparent;
         width: 90%;
-        height: 80%;
+        height: 70%;
         margin: 0 auto;
     }
 
@@ -315,17 +357,22 @@
         margin-left: 100px;
     }
 
+    .text_box1 .page3_img_wrap img {
+        margin: 30px auto;
+    }
+
     .page3_img_wrap {
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.4);
+        background: transparent;
+        margin: 150px auto;
     }
 
     .page3_img_wrap img {
         display: block;
         width: 57%;
         height: auto;
-        margin: -40px auto;
+        margin: -80px auto;
     }
 
     .page3_box li img {
@@ -346,7 +393,7 @@
     .work_button {
         width: 150px;
         margin: 0px auto;
-        background: rgba(255, 255, 255, 0.8);
+        background: white;
         height: 50px;
         border-radius: 100px;
     }
@@ -376,7 +423,8 @@
         flex-direction: row;
         justify-content: space-around;
         margin: 50px auto;
-      
+        opacity: 0;
+
     }
 
     .w_box_wrap li {
@@ -386,12 +434,34 @@
         position: relative;
         overflow: hidden;
         margin: 20px auto;
+
+
     }
+
+    .w_btn {
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .w_btn:hover {
+        color: white;
+    }
+
+    .w_box1 .hid {
+        width: 100%;
+        height: 100%;
+        /*        margin: 0 auto;*/
+        top: 0;
+        line-height: 40px;
+    }
+    .qr{display: block; margin: 0 auto; width: 10%; height: auto;}
 
     .w_box_wrap li:hover {}
 
     .w_box_wrap li:hover .hid {
-        background: rgba(255, 255, 255, 0.9);
+        background-color:darksalmon;
         display: block;
     }
 
@@ -424,6 +494,30 @@
         color: white;
     }
 
+    .hid .w2_1 {
+        color:
+            #303841
+    }
+
+    .hid .w2_2 {
+        color: #efefef;
+    }
+
+    .hid .w3_1 {
+        color:
+            black;
+    }
+
+    .hid .w3_2 {
+        color: white;
+    }
+
+    .hid .w3_3 {
+        color:
+            burlywood;
+    }
+
+
     .page3_img {
         display: block;
         width: 65%;
@@ -455,6 +549,14 @@
     }
 
     /* page4 */
+    #page4 h1 {
+        color: transparent;
+    }
+
+    #page4 .text_box {
+        background: transparent;
+    }
+
     #page4 .text_box .w_box_wrap li img {
         display: block;
         width: 100%;
@@ -469,6 +571,7 @@
         height: auto;
     }
 
+    /*
     #page5 .text_box {
         background: rgba(0, 0, 0, 0);
     }
@@ -484,7 +587,29 @@
     p {
         text-shadow: 1px 2px 5px black;
     }
+*/
+    .ico_box {
+        width: 30%;
+        height: auto;
+        position: absolute;
+        top: 67%;
+        left: 63%;
+        margin: 0 auto;
+    }
 
+    .ico_box li {
+        width: 10%;
+        height: auto;
+        float: left;
+        margin: 0 auto;
+        margin: 20px;
+    }
+
+    .ico_box img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 <script>
     $(document).ready(function() {
@@ -535,21 +660,34 @@
         });
         // li 클릭하면 화면 중간에 팝업창처럼
         $(".pro_btn .next_btn").click(function() {
-            $("#page3 .text_box1").hide(800);
-            $("#page3 .text_box2").show(800);
+            $("#page3 .text_box1").fadeOut(800);
+            $("#page3 .text_box2").fadeIn(800);
             $(".next_btn").hide(800);
             $(".prev_btn").show(800);
         });
         $(".pro_btn .prev_btn").click(function() {
-            $("#page3 .text_box2").hide(800);
-            $("#page3 .text_box1").show(800);
+            $("#page3 .text_box2").fadeOut(800);
+            $("#page3 .text_box1").fadeIn(800);
             $(".prev_btn").hide(800);
             $(".next_btn").show(800);
         });
-        $("")
-
+        var p = $(".text_box4");
+        p.mouseover(function() {
+            $(".w_box_wrap").addClass("on");
+        });
     });
+</script>
+<script language="javascript">
+    <!--  
+    function openWin() {
+        window.open("http://sujeong23.github.io/m1", "m1", "width=600, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
+    }
 
+    function openWin2() {
+        window.open("http://sujeong23.github.io/m1", "m1", "width=360, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
+    }
+    //
+    -->
 </script>
 
 <body>
@@ -565,17 +703,20 @@
         </nav>
     </header>
     <div class="page" id="page1" data-rel="0">
-        <img src="./img/1.jpg" alt="" class="back_img">
+        <img src="./img/1-1.png" alt="" class="back_img">
+        <!--
         <div class="main_tit_box">
             <h1 class="main_tit">Web design Portfolio</h1>
             <h2 class="name">Park Su Jeong</h2>
         </div>
+-->
         <div class="btn_box top">
             <button class="r_btn" data-rel="1">↓</button>
         </div>
     </div>
     <div class="page" id="page2" data-rel="1">
-        <img src="./img/2.jpg" alt="" class="back_img">
+        <img src="./img/2-1.PNG" alt="" class="back_img">
+        <!--
         <div class="text_box_wrap">
             <div class="text_box">
                 <h1>MY PROFILE</h1>
@@ -618,16 +759,17 @@
                 </ul>
             </div>
         </div>
+-->
         <div class="btn_box top">
             <button class="r_btn" data-rel="0">↑</button>
             <button class="r_btn" data-rel="2">↓</button>
         </div>
     </div>
     <div class="page" id="page3" data-rel="2">
-        <img src="./img/3.png" alt="" class="back_img">
+        <img src="./img/3-1.png" alt="" class="back_img">
         <div class="text_box text_box1">
             <div class="page3_img_wrap">
-                <h1>SKILLS &amp; WORKS</h1>
+                <!--                <h1>SKILLS &amp; WORKS</h1>-->
                 <img src="./img/skill3.png" alt="">
                 <!--
                 <div class="page3_box">
@@ -653,7 +795,7 @@
         </div>
         <div class="text_box text_box2">
             <div class="page3_img_wrap">
-                <h1>SKILLS &amp; WORKS</h1>
+                <!--                <h1>SKILLS &amp; WORKS</h1>-->
                 <img src="./img/p1-4.png" alt="" class="page3_img">
             </div>
             <!--
@@ -674,21 +816,29 @@
         </div>
     </div>
     <div class="page" id="page4" data-rel="3">
-        <img src="./img/4.jpg" alt="" class="back_img">
+        <img src="./img/4.png" alt="" class="back_img">
         <div class="text_box text_box4">
             <h1>WORK</h1>
             <div class="work_button"><a href="p1-1.pdf">PDF로 보기</a></div>
             <ul class="w_box_wrap">
                 <li class="w_box w_box1">
                     <a><img src="./img/woman-reading-on-ipad-pro.jpg" alt=""></a>
-                    <a href="https://sujeong23.github.io/m1" class="hid">중앙대학교<br>반응형(태블릿, 모바일)<br><span class="w1_1">●</span>&nbsp;<span class="w1_2">●</span>&nbsp;<span class="w1_3">●</span></a>
+                    <div class="hid">중앙대학교<br>반응형<br>
+                        <a onclick="javascript:openWin();" class="w_btn">태블릿</a>&nbsp;
+                        <a onclick="javascript:openWin2();" class="w_btn">모바일<br></a>
+                        <span class="w1_1">●</span>&nbsp;<span class="w1_2">●</span>&nbsp;
+                        <span class="w1_3">●</span>
+                    </div>
                 </li>
-                <li class="w_box w_box2"><a href=""><img src="./img/m3_1_mockup.jpg" alt=""></a>
+                <li class="w_box w_box2">
+                    <a href=""><img src="./img/m3_1_mockup.jpg" alt=""></a>
                     <a href="https://sujeong23.github.io/m3" class="hid">대한출판문화협회<br>반응형<br>
                         <span class="w2_1">●</span>&nbsp;<span class="w2_2">●</span>&nbsp;<span class="w2_3">●</span></a>
                 </li>
                 <!--                 <span class="hid hid2">대한출판문화협회</span>-->
-                <li class="w_box w_box3"><a><img src="./img/minimal-dell-display.png" alt=""></a> <a href="https://sujeong23.github.io/c7" class="hid">Ben's Barbershopbr<br>데스크탑</a>
+                <li class="w_box w_box3"><a><img src="./img/minimal-dell-display.png" alt=""></a> <a href="https://sujeong23.github.io/c7" class="hid">Ben's Barbershopbr<br>데스크탑<br>
+                        <span class="w3_1">●</span>&nbsp;<span class="w3_2">●</span>&nbsp;<span class="w3_3">●</span>
+                    </a>
                 </li>
                 <!--                <span class="hid hid3">중앙대학교</span>-->
                 <li class="w_box w_box4"><a><img src="./img/ipad-mini-studio-7.png" alt=""></a>
@@ -700,7 +850,8 @@
                 <li class="w_box w_box5"><a href=""><img src="./img/minimal-microsoft-surface-studio.png" alt=""></a>
                     <a href="http://tnwjd10041004.dothome.co.kr/c1" class="hid">금산군청 <br> 반응형</a></li>
                 <li class="w_box w_box6"><a href=""><img src="./img/iphone-se-on-the-leather-wallet.jpg" alt=""></a>
-                    <a href="https://sujeong23.github.io/mo4" class="hid">로레알 <br> 모바일</a></li>
+                    <a href="https://sujeong23.github.io/mo4" class="hid">로레알 <br>모바일
+                    <img src="/img/qrcode.png" alt="" class="qr"></a></li>
                 <li class="w_box w_box7"><a href=""><img src="./img/minimal-dell-laptop.png" alt=""></a>
                     <a href="https://sujeong23.github.io/m4" class="hid">아주대병원 <br> 데스크탑</a></li>
                 <li class="w_box w_box8"><a href=""><img src="./img/mockDrop_Nexus 6 in front of a iMac.jpg" alt="">
@@ -714,16 +865,21 @@
         </div>
     </div>
     <div class="page" id="page5" data-rel="4">
-        <img src="./img/3.png" alt="" class="back_img">
+        <img src="./img/contact.png" alt="" class="back_img">
+        <ul class="ico_box">
+            <li><a href="https://www.pinterest.co.kr/"><img src="./img/ico_pin.png" alt=""></a></li>
+            <li><a href="https://github.com/"><img src="./img/ico_git.png" alt=""></a></li>
+            <li><a href="https://trello.com/"><img src="./img/ico_tre.png" alt=""></a></li>
+        </ul>
+        <!--
         <div class="text_box">
             <div class="contact_wrap">
                 <img src="./img/contact.png" alt="">
             </div>
         </div>
+-->
         <div class="btn_box top">
             <button class="r_btn" data-rel="0">↑</button>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>
