@@ -293,7 +293,7 @@
 
     /* page3 */
     /*    animation*/
-    
+
     /*      */
     #page {
         background: white;
@@ -420,12 +420,35 @@
         top: 0;
         line-height: 40px;
     }
-    .qr{display: block; margin: 0 auto; width: 10%; height: auto;}
+
+    #w_box6 .hid {
+        width: 100%;
+        height: 100%;
+        /*        margin: 0 auto;*/
+        top: 0;
+        line-height: 44px;
+        padding: 5% 0%;
+        cursor: pointer;
+    }
+
+    #w_box6 .hid img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .w_box6 img.qr {
+        position: absolute;
+        top: 45%;
+        left: 38%;
+        width: 25%;
+        height: 25%;
+    }
 
     .w_box_wrap li:hover {}
 
     .w_box_wrap li:hover .hid {
-        background-color:darksalmon;
+        background-color: lightgray;
         display: block;
     }
 
@@ -444,6 +467,18 @@
         line-height: 50px;
         padding: 13% 0%;
         display: none;
+    }
+
+    .w0_1 {
+        color: #4a5164;
+    }
+
+    .w0_2 {
+        color: white;
+    }
+
+    .w0_3 {
+        color: black;
     }
 
     .hid .w1_1 {
@@ -481,6 +516,41 @@
             burlywood;
     }
 
+    .w4_1 {
+        color: #343434;
+    }
+
+    .w4_2 {
+        color: white;
+    }
+
+    .w4_3 {
+        color: orange;
+    }
+
+    .w6_1 {
+        color: #24335b;
+    }
+
+    .w6_2 {
+        color: white;
+    }
+
+    .w6_3 {
+        color: black;
+    }
+
+    .w7_1 {
+        color: #fdfdf7;
+    }
+
+    .w7_2 {
+        color: #3f3b3a;
+    }
+
+    .w7_3 {
+        color: #ff6666;
+    }
 
     .page3_img {
         display: block;
@@ -521,7 +591,7 @@
         background: transparent;
     }
 
-    #page4 .text_box .w_box_wrap li img {
+    #page4 .text_box .w_box_wrap li img.ba {
         display: block;
         width: 100%;
         height: auto;
@@ -574,6 +644,7 @@
         width: 100%;
         height: 100%;
     }
+
 </style>
 <script>
     $(document).ready(function() {
@@ -637,6 +708,7 @@
             $(".w_box_wrap").addClass("on");
         });
     });
+
 </script>
 <script language="javascript">
     <!--  
@@ -647,7 +719,15 @@
     function openWin2() {
         window.open("http://sujeong23.github.io/m1", "m1", "width=360, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
     }
+
+    function openWin3() {
+        window.open("http://m.vhehrjf1004.cafe24.com/", "cafe", "width=340, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
+    }
+    function openWin4() {
+        window.open("http://sujeong23.github.io/mo4", "m04", "width=340, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
+    }
     //
+
     -->
 </script>
 
@@ -782,20 +862,18 @@
             <h1>WORK</h1>
             <div class="work_button"><a href="p1-1.pdf">PDF로 보기</a></div>
             <ul class="w_box_wrap">
-                <li class="w_box w_box0">
-                    <a><img src="./img/cafe_mock.jpg" alt=""></a>
-                    <div class="hid">공간조명<br>데스크탑<br>
-<!--
-                        <a onclick="javascript:openWin();" class="w_btn">태블릿</a>&nbsp;
-                        <a onclick="javascript:openWin2();" class="w_btn">모바일<br></a>
--->
-                        <span class="w1_1">●</span>&nbsp;<span class="w1_2">●</span>&nbsp;
-                        <span class="w1_3">●</span>
+                <li class="w_box w_box1">
+                    <a><img src="./img/cafe_mock.jpg" alt="" class="ba"></a>
+                    <div class="hid">공간조명<br>반응형<br>
+                        <a href="http://vhehrjf1004.cafe24.com" class="w_btn">데스크탑</a>&nbsp;
+                        <a onclick="javascript:openWin3();" class="w_btn">모바일<br></a>
+                        <span class="w0_1">●</span>&nbsp;<span class="w0_2">●</span>&nbsp;
+                        <span class="w0_3">●</span>
                     </div>
                 </li>
                 <li class="w_box w_box1">
-                    <a href=""><img src="./img/woman-reading-on-ipad-pro.jpg" alt=""></a>
-                   <div class="hid">중앙대학교<br>반응형<br>
+                    <a href=""><img src="./img/woman-reading-on-ipad-pro.jpg" alt="" class="ba"></a>
+                    <div class="hid">중앙대학교<br>반응형<br>
                         <a onclick="javascript:openWin();" class="w_btn">태블릿</a>&nbsp;
                         <a onclick="javascript:openWin2();" class="w_btn">모바일<br></a>
                         <span class="w1_1">●</span>&nbsp;<span class="w1_2">●</span>&nbsp;
@@ -803,29 +881,37 @@
                     </div>
                 </li>
                 <!--                 <span class="hid hid2">대한출판문화협회</span>-->
-                <li class="w_box w_box2"><a><img src="./img/m3_1_mockup.jpg" alt=""></a> <a href="https://sujeong23.github.io/m3" class="hid">대한출판문화협회<br>반응형<br>
+                <li class="w_box w_box2"><a><img src="./img/m3_1_mockup.jpg" alt="" class="ba"></a> <a href="https://sujeong23.github.io/m3" class="hid">대한출판문화협회<br>반응형<br>
                         <span class="w2_1">●</span>&nbsp;<span class="w2_2">●</span>&nbsp;<span class="w2_3">●</span>
                     </a>
                 </li>
                 <!--                <span class="hid hid3">중앙대학교</span>-->
-                <li class="w_box w_box3"><a><img src="./img/minimal-dell-display.png" alt=""></a>
+                <li class="w_box w_box3"><a><img src="./img/minimal-dell-display.png" alt="" class="ba"></a>
                     <a href="https://sujeong23.github.io/c7" class="hid">Ben's Barbershop <br>데스크탑<br>
-                    <span class="w3_1">●</span>&nbsp;<span class="w3_2">●</span>&nbsp;<span class="w3_3">●</span>
+                        <span class="w3_1">●</span>&nbsp;<span class="w3_2">●</span>&nbsp;<span class="w3_3">●</span>
                     </a>
 
                 </li>
                 <!--                <span class="hid hid4">중앙대학교</span>-->
             </ul>
             <ul class="w_box_wrap">
-                <li class="w_box w_box5"><a href=""><img src="./img/minimal-microsoft-surface-studio.png" alt=""></a>
-                    <a href="http://tnwjd10041004.dothome.co.kr/c1" class="hid">금산군청 <br> 반응형</a></li>
-                <li class="w_box w_box6"><a href=""><img src="./img/iphone-se-on-the-leather-wallet.jpg" alt=""></a>
-                    <a href="https://sujeong23.github.io/mo4" class="hid">로레알 <br>모바일
-                    <img src="/img/qrcode.png" alt="" class="qr"></a></li>
-                <li class="w_box w_box7"><a href=""><img src="./img/minimal-dell-laptop.png" alt=""></a>
-                    <a href="https://sujeong23.github.io/m4" class="hid">아주대병원 <br> 데스크탑</a></li>
-                <li class="w_box w_box8"><a href=""><img src="./img/mockDrop_Nexus 6 in front of a iMac.jpg" alt="">
-                        <a href="https://sujeong23.github.io/c2" class="hid">잠바주스 <br> 반응형</a></a>
+                <li class="w_box w_box5"><a href=""><img src="./img/minimal-microsoft-surface-studio.png" alt="" class="ba"></a>
+                    <a href="http://tnwjd10041004.dothome.co.kr/c1" class="hid">금산군청 <br> 반응형<br>
+                        <span class="w4_1">●</span>&nbsp;<span class="w4_2">●</span>&nbsp;<span class="w4_3">●</span>
+                    </a></li>
+                <li class="w_box w_box6" id="w_box6"><a href=""><img src="./img/iphone-se-on-the-leather-wallet.jpg" alt="" class="ba"></a>
+                    <a onclick="javascript:openWin4();" class="hid">로레알 <br>모바일
+                        <img src="/img/qrcode.png" alt="" class="qr">
+                    </a>
+                </li>
+                <li class="w_box w_box7"><a href=""><img src="./img/minimal-dell-laptop.png" alt="" class="ba"></a>
+                    <a href="https://sujeong23.github.io/m4" class="hid">아주대병원 <br> 데스크탑<br>
+                        <span class="w6_1">●</span>&nbsp;<span class="w6_2">●</span>&nbsp;<span class="w6_3">●</span>
+                    </a></li>
+                <li class="w_box w_box8"><a href=""><img src="./img/mockDrop_Nexus 6 in front of a iMac.jpg" alt="" class="ba">
+                        <a href="https://sujeong23.github.io/c2" class="hid">잠바주스 <br> 반응형<br>
+                            <span class="w7_1">●</span>&nbsp;<span class="w7_2">●</span>&nbsp;<span class="w7_3">●</span>
+                        </a></a>
                 </li>
             </ul>
         </div>
@@ -852,4 +938,6 @@
             <button class="r_btn" data-rel="0">↑</button>
         </div>
     </div>
-</body></html>
+</body>
+
+</html>
