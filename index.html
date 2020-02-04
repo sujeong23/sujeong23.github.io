@@ -45,11 +45,14 @@
     input,
     button {
         outline: 0;
+        border: 0;
+        cursor: pointer;
     }
 
     a {
         text-decoration: none;
     }
+    
 
     .hd {
         width: 100%;
@@ -96,6 +99,7 @@
         font-family: 'Bebas Neue', cursive;
         color: black;
         font-size: 26px;
+        display: block;
     }
 
     /* page */
@@ -130,7 +134,7 @@
     }
 
     .text_box h1 {
-        padding: 60px 0px;
+        padding: 50px 0px;
         font-size: 50px;
     }
 
@@ -323,7 +327,7 @@
     }
 
     .text_box1 .page3_img_wrap img {
-        margin: 30px auto;
+        margin: 50px auto;
     }
 
     .page3_img_wrap {
@@ -333,18 +337,18 @@
         margin: 150px auto;
     }
 
-    .page3_img_wrap img {
+    .page3_img_wrap img{
         display: block;
-        width: 57%;
         height: auto;
-        margin: -80px auto;
+        padding: 40px
     }
+    .page3_img_wrap img.sk_img{width: 35%;}
+    .page3_img_wrap img.page3_img{width: 50%;}
 
     .page3_box li img {
         display: block;
         width: 100%;
         height: auto;
-        margin: 0 auto;
     }
 
     .page3_box a {
@@ -359,7 +363,7 @@
         width: 150px;
         margin: 0px auto;
         background: white;
-        height: 50px;
+        height: auto;
         border-radius: 100px;
     }
 
@@ -387,7 +391,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 50px auto;
+        margin: 10px auto;
 
     }
 
@@ -811,7 +815,7 @@
         <div class="text_box text_box1">
             <div class="page3_img_wrap">
                 <!--                <h1>SKILLS &amp; WORKS</h1>-->
-                <img src="./img/skill3.png" alt="">
+                <img src="./img/skill3.png" alt="" class="sk_img">
                 <!--
                 <div class="page3_box">
                     <li><img src="./img/ico_pho.png" alt=""><a>90%</a></li>
