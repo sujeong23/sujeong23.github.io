@@ -677,7 +677,8 @@
         html {
             width: auto;
             height: auto;
-        }
+            overflow: scroll;
+         }
 
         .hd {
             height: 50px;
@@ -814,7 +815,7 @@
 </style>
 <script>
     $(document).ready(function() {
-//        if($(window).width() >768) {
+        if($(window).width() >768) {
         var p = $(".page");
         p.each(function(index) { // .page의 개별적으로 Wheel 이벤트 적용
             $(this).on("mousewheel DOMMouseScroll", function(e) {
@@ -857,18 +858,20 @@
                 });
             });
         });
-//        };
-//        if($(window).width() <767) {
-//                $(".r_btn, .gnb a").click(function() {
-//                    var pg = parseInt($(this).attr("data-rel"));
-//                    var ht = parseInt($(".back_img").height());
-//                    $("body, html").not(":animated").animate({
-//                        scrollTop: ht * pg + "px"
-//                    }, 1000);
-//                });
-//            
-//            
-//        };
+        };
+        if($(window).width() <767) {
+               $(".r_btn, .gnb a").click(function() {
+                    var pg = parseInt($(this).attr("data-rel"));
+                    var ht = parseInt($(".page").height());
+                    $("body, html").not(":animated").animate({
+                        scrollTop: ht * pg + "px"
+                    }, 1000);
+                });
+       
+       
+            
+            
+        };
         // li 클릭하면 화면 중간에 팝업창처럼
         $(".pro_btn .next_btn").click(function() {
             $("#page3 .text_box1").fadeOut(800);
