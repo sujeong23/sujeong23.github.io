@@ -52,7 +52,7 @@
     a {
         text-decoration: none;
     }
-    
+
 
     .hd {
         width: 100%;
@@ -316,7 +316,7 @@
         flex-wrap: nowrap;
         justify-content: space-around;
         width: 70%;
-        margin: 200px auto;
+        margin: 0px auto;
     }
 
     .page3_box li {
@@ -337,13 +337,19 @@
         margin: 150px auto;
     }
 
-    .page3_img_wrap img{
+    .page3_img_wrap img {
         display: block;
         height: auto;
         padding: 40px
     }
-    .page3_img_wrap img.sk_img{width: 35%;}
-    .page3_img_wrap img.page3_img{width: 50%;}
+
+    .page3_img_wrap img.sk_img {
+        width: 35%;
+    }
+
+    .page3_img_wrap img.page3_img {
+        width: 50%;
+    }
 
     .page3_box li img {
         display: block;
@@ -387,11 +393,11 @@
 
     .w_box_wrap {
         width: 100%;
-        height: auto;
+        height: 30%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 10px auto;
+        margin: 0px auto;
 
     }
 
@@ -649,6 +655,161 @@
         height: 100%;
     }
 
+    @media screen and (max-width:414px) {
+
+        body,
+        html {
+            width: auto;
+            height: auto;
+        }
+
+        .hd {
+            height: 20px;
+        }
+
+
+    }
+
+    @media screen and (max-width:767px) {
+
+        body,
+        html {
+            width: auto;
+            height: auto;
+        }
+
+        .hd {
+            height: 50px;
+        }
+
+        .gnb {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .gnb li {
+            width: 20%;
+            float: left;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .gnb a {
+            display: block;
+            font-size: 18px;
+        }
+
+        .btn_box {
+            position: absolute;
+            z-index: 99;
+            bottom: 20%;
+        }
+
+        .r_btn {
+            font-size: 20px;
+            margin: 0 auto;
+            width: 30px;
+            height: 30px;
+            border-radius: 60px;
+            margin: 10px;
+        }
+
+        /*        .page{margin-top:20%;}*/
+        .page img.back_img {
+            display: block;
+            width: auto;
+            margin: 30px auto;
+            height: 360px;
+        }
+
+
+        .page3_img_wrap {
+            margin: 30px auto;
+            padding: 0px;
+        }
+
+        .page3_img_wrap img.sk_img {
+            width: 55%;
+        }
+
+        .page3_img_wrap img.page3_img {
+            width: 70%;
+        }
+
+        .pro_btn button {
+            height: auto;
+        }
+
+        .btn_ico {
+            font-size: 30px;
+            color: BLACK;
+        }
+
+        .pro_btn .prev_btn {
+            float: left;
+            margin-left: 2%;
+        }
+
+        .pro_btn .next_btn {
+            float: right;
+            margin-right: 2%;
+        }
+
+        .w_box_wrap {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0px auto;
+
+        }
+
+        .w_box_wrap li {
+            width: 50%;
+            height: auto;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            margin: 10px auto;
+
+
+        }
+        #page4{height: auto;}
+        #page4 .text_box {
+            background: transparent;
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            top: 2%;
+
+        }
+        #page4 .back_img{height: auto;}
+
+        #page4 h1 {
+            padding: 0;
+        }
+
+        .work_button {
+            width: 90px;
+            margin: 0px auto;
+            background: white;
+            height: auto;
+            border-radius: 100px;
+        }
+        .work_button a {
+        font-family: 'Sunflower', sans-serif;
+        display: block;
+        color: black;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    }
+
 </style>
 <script>
     $(document).ready(function() {
@@ -727,6 +888,7 @@
     function openWin3() {
         window.open("http://m.vhehrjf1004.cafe24.com/", "cafe", "width=340, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
     }
+
     function openWin4() {
         window.open("http://sujeong23.github.io/mo4", "m04", "width=340, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
     }
