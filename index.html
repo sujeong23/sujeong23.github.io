@@ -944,24 +944,22 @@
         }
 
         #page4 {
-            height: 1400px;
+            height: 1200px; 
         }
+        #page4 h1{display: none;}
 
         #page4 .text_box {
             background: transparent;
             width: 90%;
             height: auto;
-            margin: 0 auto;
+            margin: 70px auto;
 
         }
 
         #page4 .back_img {
             width:100%;
-            height: 100%;
-            margin-top: -24px;
-        }
-
-        #page4 h1 {display: none;
+            height: auto;
+            margin:40px auto;
         }
 
         .work_button {
@@ -993,10 +991,67 @@
             width: auto;
             height: auto;
             overflow: scroll;
+            background:#f3f4f0;
         }
         .btn_box {
             opacity: 0;}
-        
+        .page img.back_img {
+            display: block;
+            width: 100vw;
+            margin: 80px auto;
+            height: auto;
+        }
+         .page3_img_wrap img.sk_img {
+            width: 55%;
+        }
+
+        .page3_img_wrap img.page3_img {
+            width: 70%;
+        }
+
+         .w_box_wrap {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0px auto;
+            padding:6px 0px;
+            background: white;
+
+        }
+
+        .w_box_wrap li {
+            width: 50%;
+            margin:0px auto;
+            height: auto;
+/*            background: white;*/
+            position: relative;
+            overflow: hidden;
+
+
+        }
+        #page4 {
+            height: 1600px; 
+        }
+        #page4 h1{display: none;}
+
+        #page4 .text_box {
+            background: transparent;
+            width: 90%;
+            height: auto;
+            margin: 100px auto;
+
+        }
+
+        #page4 .back_img {
+            width:100%;
+            height: auto;
+            margin:50px auto;
+        }
+
+        .work_button{margin: 10px auto;}
 
     }
 </style>
@@ -1046,7 +1101,7 @@
                 });
             });
         };
-        if ($(window).width() < 767) {
+        if ($(window).width() < 1400) {
             $(".r_btn, .ga").click(function() {
                 var pg = parseInt($(this).attr("data-rel"));
                 var ht = parseInt($(".page").height());
