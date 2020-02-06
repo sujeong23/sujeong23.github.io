@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="webdesign, portfolio, design">
+    <meta name="description" content="Sujeong's Webdesign Portfolio">
+    <!--    og-->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Sujeong's Webdesign Portfolio">
+    <meta property="og:url" content="http://sujeong23.github.io">
+    <meta property="og:site_name" content="Sujeong's Webdesign Portfolio">
+    <meta property="og:description" content="Sujeong's Webdesign Portfolio">
+    <meta property="og:image" content="http://sujeong23.github.io/img/1-1.png">
+    <!--    -->
     <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -13,7 +23,7 @@
     <script src="./jquery/jquery.js.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <title>Document</title>
+    <title>Sujeong's Webdesign Portfolio</title>
 </head>
 <style>
     * {
@@ -662,31 +672,21 @@
         html {
             width: auto;
             height: auto;
+            overflow: scroll;
         }
 
         .hd {
             height: 20px;
         }
 
-
-    }
-
-    @media screen and (max-width:767px) {
-
-        body,
-        html {
-            width: auto;
-            height: auto;
-            overflow: scroll;
-         }
-
-        .hd {
-            height: 50px;
+        .page {
+            margin: 100px auto;
         }
 
-        .gnb {
-            width: 95%;
+        .back_img {
+            width: 100vw;
             margin: 0 auto;
+            height: auto;
         }
 
         .gnb li {
@@ -716,7 +716,7 @@
             margin: 10px;
         }
 
-        /*        .page{margin-top:20%;}*/
+                .page{margin-top:20%;}
         .page img.back_img {
             display: block;
             width: auto;
@@ -769,7 +769,7 @@
         }
 
         .w_box_wrap li {
-            width: 50%;
+            width: 100vw;
             height: auto;
             background: white;
             position: relative;
@@ -778,19 +778,30 @@
 
 
         }
-        #page4{height: auto; }
+
+        #page4 {
+            height: auto;
+        }
+
         #page4 .text_box {
             background: transparent;
             width: 90%;
             height: auto;
             margin: 0 auto;
-            top: 2%;
+            top: 1%;
 
         }
-        #page4 .back_img{height: auto;}
+
+        #page4 .back_img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
         #page4 h1 {
             padding: 0;
+            text-align: center;
+            color: black;
         }
 
         .work_button {
@@ -800,77 +811,257 @@
             height: auto;
             border-radius: 100px;
         }
+
         .work_button a {
-        font-family: 'Sunflower', sans-serif;
-        display: block;
-        color: black;
-        text-align: center;
-        line-height: 30px;
-        font-size: 18px;
-        font-weight: bold;
-    }
+            font-family: 'Sunflower', sans-serif;
+            display: block;
+            color: black;
+            text-align: center;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
 
     }
 
+    @media screen and (max-width:768px) {
+
+        body,
+        html {
+            width: auto;
+            height: auto;
+            overflow: scroll;
+            background:#f3f4f0;
+        }
+
+        .hd {
+            height: 50px;
+        }
+
+        .gnb {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .gnb li {
+            width: 20%;
+            float: left;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .gnb a {
+            display: block;
+            font-size: 18px;
+        }
+
+        .btn_box {
+/*            display: none;*/
+            position: absolute;
+            z-index: 99;
+            bottom: 20%;
+        }
+
+        .r_btn {
+            font-size: 20px;
+            margin: 0 auto;
+            width: 30px;
+            height: 30px;
+            border-radius: 60px;
+            margin: 10px;
+        }
+
+        /*        .page{margin-top:20%;}*/
+        .page img.back_img {
+            display: block;
+            width: auto;
+            margin: 30px auto;
+            height: 360px;
+        }
+
+
+        .page3_img_wrap {
+            margin: 30px auto;
+            padding: 0px;
+        }
+
+        .page3_img_wrap img.sk_img {
+            width: 55%;
+        }
+
+        .page3_img_wrap img.page3_img {
+            width: 70%;
+        }
+
+        .pro_btn button {
+            background: transparent;
+            height: ;
+        }
+
+        .btn_ico {
+            font-size: 20px;
+            color: BLACK;
+            padding: 0;
+        }
+
+        .pro_btn .prev_btn {
+            float: left;
+            margin-left: 2%;
+        }
+
+        .pro_btn .next_btn {
+            float: right;
+            margin-right: 2%;
+        }
+
+        .w_box_wrap {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0px auto;
+            padding:6px 0px;
+            background: white;
+
+        }
+
+        .w_box_wrap li {
+            width: 50%;
+            height: auto;
+/*            background: white;*/
+            position: relative;
+            overflow: hidden;
+
+
+        }
+          .w_box_wrap li img.ba{
+            height: auto;
+            background: white;
+
+
+        }
+
+        #page4 {
+            height: 1400px;
+        }
+
+        #page4 .text_box {
+            background: transparent;
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+
+        }
+
+        #page4 .back_img {
+            width:100%;
+            height: 100%;
+            margin-top: -24px;
+        }
+
+        #page4 h1 {display: none;
+        }
+
+        .work_button {
+            width:80px;
+            margin: 5px auto;
+            background: white;
+            height: auto;
+            border-radius: 100px;
+        }
+
+        .work_button a {
+            display: block;
+            font-family: 'Sunflower', sans-serif;
+            color: black;
+            text-align: center;
+            line-height: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #page5 h1{display: none;}
+        #page5 .back_img{margin: 0;}
+
+    }
+
+    @media screen and (min-width:769px) and (max-width:1024px) {
+
+        body,
+        html {
+            width: auto;
+            height: auto;
+            overflow: scroll;
+        }
+        .btn_box {
+            opacity: 0;}
+        
+
+    }
 </style>
 <script>
     $(document).ready(function() {
-        if($(window).width() >768) {
-        var p = $(".page");
-        p.each(function(index) { // .page의 개별적으로 Wheel 이벤트 적용
-            $(this).on("mousewheel DOMMouseScroll", function(e) {
-                e.preventDefault();
-                var delta = 0;
-                if (!event) event = window.event;
-                if (event.wheelDelta) {
-                    delta = event.wheelDelta / 120;
-                    if (window.opera) {
-                        delta = -delta;
-                    } //오페라의 낮은 버전의 경우 역으로
-                } else if (event.detail) {
-                    delta = -event.detail / 3; //휠의 스크롤양 미동적인 3px 보완
-                }
-                var moveTop = $(window).scrollTop();
-                var sel = $(".page").eq(index);
-                if (delta < 0) { // 마우스휠을 위에서 아래로
-                    if ($(sel).next() != undefined) {
-                        try {
-                            moveTop = $(sel).next().offset().top;
-                        } catch (e) {}
+        if ($(window).width() > 768) {
+            var p = $(".page");
+            p.each(function(index) { // .page의 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function(e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) {
+                            delta = -delta;
+                        } //오페라의 낮은 버전의 경우 역으로
+                    } else if (event.detail) {
+                        delta = -event.detail / 3; //휠의 스크롤양 미동적인 3px 보완
+                    }
+                    var moveTop = $(window).scrollTop();
+                    var sel = $(".page").eq(index);
+                    if (delta < 0) { // 마우스휠을 위에서 아래로
+                        if ($(sel).next() != undefined) {
+                            try {
+                                moveTop = $(sel).next().offset().top;
+                            } catch (e) {}
 
+                        }
+                    } else { // 마우스휠을 아래에서 위로
+                        if ($(sel).prev() != undefined) {
+                            try {
+                                moveTop = $(sel).prev().offset().top;
+                            } catch (e) {}
+                        }
                     }
-                } else { // 마우스휠을 아래에서 위로
-                    if ($(sel).prev() != undefined) {
-                        try {
-                            moveTop = $(sel).prev().offset().top;
-                        } catch (e) {}
-                    }
-                }
-                $("html, body").not(":animated").animate({
-                    scrollTop: moveTop + "px"
-                }, 800);
-                $(".r_btn, .gnb a").click(function() {
-                    var pg = parseInt($(this).attr("data-rel"));
-                    var ht = parseInt($(".page").height());
-                    $("body, html").not(":animated").animate({
-                        scrollTop: ht * pg + "px"
-                    }, 1000);
+                    $("html, body").not(":animated").animate({
+                        scrollTop: moveTop + "px"
+                    }, 800);
+                    $(".r_btn, .gnb a").click(function() {
+                        var pg = parseInt($(this).attr("data-rel"));
+                        var ht = parseInt($(".page").height());
+                        $("body, html").not(":animated").animate({
+                            scrollTop: ht * pg + "px"
+                        }, 1000);
+                    });
                 });
             });
-        });
         };
-        if($(window).width() <767) {
-               $(".r_btn, .gnb a").click(function() {
-                    var pg = parseInt($(this).attr("data-rel"));
-                    var ht = parseInt($(".page").height());
-                    $("body, html").not(":animated").animate({
-                        scrollTop: ht * pg + "px"
-                    }, 1000);
-                });
-       
-       
-            
-            
+        if ($(window).width() < 767) {
+            $(".r_btn, .ga").click(function() {
+                var pg = parseInt($(this).attr("data-rel"));
+                var ht = parseInt($(".page").height());
+                var ht2 = parseInt($("#page4").height());
+                $("body, html").not(":animated").animate({
+                    scrollTop: ht * pg + "px"
+                }, 1000);
+            });
+            $("#ca").click(function(){
+                var pg = parseInt($(this).attr("data-rel"));
+                var ht2 = parseInt($("#page4").height());
+                $("body, html").not(":animated").animate({
+                    scrollTop: ht2 * pg + "px"
+                }, 1600);
+            });
         };
         // li 클릭하면 화면 중간에 팝업창처럼
         $(".pro_btn .next_btn").click(function() {
@@ -890,7 +1081,6 @@
             $(".w_box_wrap").addClass("on");
         });
     });
-
 </script>
 <script language="javascript">
     <!--  
@@ -910,7 +1100,6 @@
         window.open("http://sujeong23.github.io/mo4", "m04", "width=340, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
     }
     //
-
     -->
 </script>
 
@@ -918,11 +1107,11 @@
     <header class="hd">
         <nav class="gnb">
             <ul>
-                <li><a href="javascript:;" data-rel="0">Main</a></li>
-                <li><a href="javascript:;" data-rel="1">About me</a></li>
-                <li><a href="javascript:;" data-rel="2">Skills</a></li>
-                <li><a href="javascript:;" data-rel="3">Work</a></li>
-                <li><a href="javascript:;" data-rel="4">Contact</a></li>
+                <li><a href="javascript:;" data-rel="0" class="ga">Main</a></li>
+                <li><a href="javascript:;" data-rel="1" class="ga">About me</a></li>
+                <li><a href="javascript:;" data-rel="2" class="ga">Skills</a></li>
+                <li><a href="javascript:;" data-rel="3" class="ga">Work</a></li>
+                <li><a href="javascript:;" data-rel="4" id="ca">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -1121,6 +1310,4 @@
             <button class="r_btn" data-rel="0">↑</button>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>
