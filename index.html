@@ -419,6 +419,7 @@
         position: relative;
         overflow: hidden;
         margin: 20px auto;
+        transition: 0;
 
 
     }
@@ -466,11 +467,11 @@
         height: 25%;
     }
 
-    .w_box_wrap li:hover {}
 
     .w_box_wrap li:hover .hid {
         background-color: lightgray;
-        display: block;
+        opacity: 1;
+        transition: 0.2s;
     }
 
     .hid {
@@ -487,7 +488,8 @@
         top: 0;
         line-height: 50px;
         padding: 13% 0%;
-        display: none;
+        opacity: 0;
+
     }
 
     .w0_1 {
@@ -697,7 +699,8 @@
             margin: 0 auto;
             height: auto;
         }
-         .gnb {
+
+        .gnb {
             width: 100%;
             margin: 0 auto;
         }
@@ -748,9 +751,10 @@
             height: auto;
             margin: 0 auto;
         }
-        #page2 .text_box{}
 
-         #page3 .text_box {
+        #page2 .text_box {}
+
+        #page3 .text_box {
             width: 90%;
             margin: 0 auto;
             height: 80%;
@@ -758,7 +762,8 @@
             top: 3%;
             left: 5%;
         }
-          .pro_btn button {
+
+        .pro_btn button {
             background: transparent;
             height: ;
         }
@@ -768,11 +773,15 @@
             color: BLACK;
             padding: 0;
         }
+
         #page4 {
             padding: 50px 0px;
             background: white;
         }
-        #page4 .back_img{display: none;}
+
+        #page4 .back_img {
+            display: none;
+        }
 
         .page3_img_wrap {
             margin: 5px auto;
@@ -829,7 +838,8 @@
 
 
         }
-          .w_box_wrap li:hover .hid {
+
+        .w_box_wrap li:hover .hid {
             display: none;
         }
 
@@ -864,9 +874,10 @@
             color: black;
             line-height: 24px;
             font-weight: bold;
-            
+
         }
-          .only_mo a {
+
+        .only_mo a {
             display: block;
             color: black;
             cursor: pointer;
@@ -913,7 +924,8 @@
         }
 
     }
-/*    #page5*/
+
+    /*    #page5*/
     .ico_box {
         width: 40%;
         height: auto;
@@ -922,7 +934,8 @@
         left: 63%;
         margin: 0 auto;
     }
-     .ico_box li {
+
+    .ico_box li {
         width: 8%;
         height: auto;
         float: left;
@@ -1125,7 +1138,8 @@
 
         }
 
-        #page3, #page4{
+        #page3,
+        #page4 {
             background: white;
             margin: 0;
         }
@@ -1249,7 +1263,7 @@
         .work_button {
             margin: 10px auto;
         }
-        
+
         body,
         html {
             width: auto;
@@ -1443,7 +1457,8 @@
 
         }
 
-        #page3, #page4{
+        #page3,
+        #page4 {
             background: white;
             margin: 0;
         }
@@ -1488,10 +1503,6 @@
         }
 
     }
-
-
-    }
-
 </style>
 <script>
     $(document).ready(function() {
@@ -1574,7 +1585,6 @@
             $(".w_box_wrap").addClass("on");
         });
     });
-
 </script>
 <script language="javascript">
     <!--  
@@ -1594,7 +1604,6 @@
         window.open("http://sujeong23.github.io/mo4", "m04", "width=340, height=1024, toolbar=no, menubar=no, scrollbars=yes, resizable=yes", );
     }
     //
-
     -->
 </script>
 
@@ -1755,11 +1764,10 @@
                         <p>대한출판문화협회<br>반응형<br></p>
                         <a href="https://sujeong23.github.io/m3">CLICK HERE</a>
                     </div>
-                    <div class="hid">대한출판문화협회<br>반응형<br>
-                        <a href="https://sujeong23.github.io/m3" class="">
-                            <span class="w2_1">●</span>&nbsp;<span class="w2_2">●</span>&nbsp;<span class="w2_3">●</span>
-                        </a>
-                    </div>
+                    <a href="https://sujeong23.github.io/m3" class="hid">대한출판문화협회<br>반응형<br>
+
+                        <span class="w2_1">●</span>&nbsp;<span class="w2_2">●</span>&nbsp;<span class="w2_3">●</span>
+                    </a>
                 </li>
                 <!--                <span class="hid hid3">중앙대학교</span>-->
                 <li class="w_box w_box3"><a class="m_wrap"><img src="./img/minimal-dell-display1.png" alt="" class="ba"></a>
@@ -1836,6 +1844,4 @@
             <button class="r_btn" data-rel="0">↑</button>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>
